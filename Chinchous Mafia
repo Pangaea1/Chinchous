@@ -1,0 +1,738 @@
+{
+    "name": "Chinchous",
+    "author": "Pangaea",
+    "summary": "The original Chinchous theme, back and better than ever before! | The Chinchous have come from the Arctic to invade the Pacific Ocean! | Notes: Lanturn and Lumineon can daykill. Octillery has a revealing daykill. Tentacool and Tentacruel can poison. Alomomola has 50 votes. One of the Mantykes has -99 votes. May the best fish/octopus/stingray/etc. win! *V10.6: Gave Remoraid a voteshield of -1 so that it isn't helpless without it's team. Also gave it 0.9 votes to not stall with Lumineon. | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea.",
+    "sides": [
+        {
+            "side": "village",
+            "translation": "Finneons"
+        },
+        {
+            "side": "float",
+            "translation": "Floatzel"
+        },
+        {
+            "side": "luv",
+            "translation": "Luvdisc"
+        },
+        {
+            "side": "tenta",
+            "translation": "Squids"
+        },
+        {
+            "side": "fish",
+            "translation": "Alliance"
+        },
+        {
+            "side": "fishsp",
+            "translation": "Alliance"
+        },
+        {
+            "side": "reli",
+            "translation": "Relicanth"
+        },
+        {
+            "side": "chin",
+            "translation": "Chinchou Military Army"
+        }
+    ],
+    "roles": [
+        {
+            "role": "fin",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
+            "actions": {
+                "hax": {
+                    "kill": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "poison": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "inspect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "distract": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "rally": {
+                        "revealTeam": 0,
+                        "revealPlayer": 1
+                    },
+                    "protect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    }
+                },
+                "kill": {
+                    "mode": {
+                        "evadeChance": 0.08
+                    }
+                },
+                "startup": "role-reveal"
+            }
+        },
+        {
+            "role": "mayor",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a weak little Pokemon. When you were raised, you wanted to be a leader. And you got your wish! You are the mayor of the Finneons, your vote counting as 5. You also recieve hax on Kill, Poison, and on PRs of your team!",
+            "actions": {
+                "vote": 5,
+                "hax": {
+                    "kill": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "poison": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "inspect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "distract": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "rally": {
+                        "revealTeam": 0,
+                        "revealPlayer": 1
+                    },
+                    "protect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    }
+                }
+            }
+        },
+        {
+            "role": "vigi",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. But, luckily for you, the Lumineons have trained you to become the strongest Finneon ever. Somehow they trained so much that you can /kill another Pokemon during the night!",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 16
+                    }
+                }
+            }
+        },
+        {
+            "role": "unkill",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. You are even weaker than the other Finneons, as you run from battle every time. However, this means you cannot be nightkilled, as you sleep in caves, hiding from the Chinchous. But for some strange reason you're brave enough to come out during the day (I don't really know why) so you're still vulnerable to daykills.",
+            "actions": {
+                "kill": {
+                    "mode": "ignore"
+                }
+            }
+        },
+        {
+            "role": "lum",
+            "translation": "Lumineon",
+            "side": "village",
+            "help": "You are a Lumineon, and you have evolved from your weak form. CHINCHOUS SUCK. You can finally fight back against the Chinchous and kill them...slowly and painfully...during the standby using /kill! Since you are a leader of the Finneons now, you can also call the Finneons with /rally [insert random player name here] for the Finneons to get hax on you! Sad thing is that you can no longer receive hax on Kill or Poison (unlike your Finneon friends.) Your vote also counts as 2.",
+            "actions": {
+                "night": {
+                    "rally": {
+                        "command": "protect",
+                        "target": "Self",
+                        "common": "Self",
+                        "priority": 99
+                    }
+                },
+                "standby": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "msg": "You can kill now kill someone with /kill [name] :",
+                        "killmsg": "Lumineon ragekills ~Target~! Lumineon then shouts out: CHINCHOUS SUCK."
+                    }
+                },
+                "vote": 2
+            }
+        },
+        {
+            "role": "tenta1",
+            "translation": "Tentacool",
+            "side": "tenta",
+            "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
+            "actions": {
+                "night": {
+                    "wrap": {
+                        "command": "distract",
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 2,
+                        "restrict": [
+                            "hide"
+                        ]
+                    },
+                    "hide": {
+                        "command": "protect",
+                        "target": "Self",
+                        "common": "Role",
+                        "priority": 7,
+                        "restrict": [
+                            "wrap",
+                            "poison"
+                        ]
+                    },
+                    "poison": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 5,
+                        "restrict": [
+                            "hide"
+                        ]
+                    }
+                },
+                "vote": -2,
+                "startup": "team-reveal"
+            }
+        },
+        {
+            "role": "tenta2",
+            "translation": "Tentacruel",
+            "side": "tenta",
+            "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can also do everything that Tentacool can do. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
+            "actions": {
+                "night": {
+                    "wrap": {
+                        "command": "distract",
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 3
+                    },
+                    "poison": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 6
+                    }
+                },
+                "vote": 2,
+                "startup": "team-reveal",
+                "kill": {
+                    "mode": "ignore"
+                }
+            }
+        },
+        {
+            "role": "lan",
+            "translation": "Lanturn",
+            "side": "chin",
+            "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can both nightkill AND daykill(Using /kill)! You also have 2 votes instead of 1. But that's about it...",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 14
+                    }
+                },
+                "standby": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "msg": "You can now kill someone with /kill [name] :",
+                        "killmsg": "Lanturn used Thunder! A Critical Hit! ~Target~ Fainted!"
+                    }
+                },
+                "vote": 2,
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "insp",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
+            "actions": {
+                "night": {
+                    "inspect": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "hooker",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
+            "actions": {
+                "night": {
+                    "distract": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 1,
+                        "limit": 1
+                    }
+                }
+            }
+        },
+        {
+            "role": "bg",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
+            "actions": {
+                "night": {
+                    "protect": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 8,
+                        "limit": 1
+                    }
+                }
+            }
+        },
+        {
+            "role": "man",
+            "translation": "Mantine",
+            "side": "fish",
+            "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!) Your vote counts as 2 as well. ",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 11
+                    },
+                    "defend": {
+                        "command": "protect",
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 7,
+                        "limit": 2
+                    }
+                },
+                "vote": 2
+            }
+        },
+        {
+            "role": "oct",
+            "translation": "Octillery",
+            "side": "fish",
+            "help": "You are an Octillery! You are a commander of the Alliance, allowing you to /kill 1 person during the night. You may also /kill one person during the day, but this will get you revealed, so it is a sacrificial move, only use it in desperate situations (Or in situations where you can't lose)! Your vote will also count as 2.",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 10
+                    }
+                },
+                "standby": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "msg": "You can now kill someone with /kill [name] :",
+                        "killmsg": "Octillery uses Ice Beam! ~Target~ was frozen solid! Octillery follows it up with a SolarBeam (aren't we underwater?) for massive damage and a Fire Blast to melt ~Target~ ! But that's not it, Octillery needed overkill, and achieved that with a HYPAH BAEM! But ~Self~ was revealed as they had to recharge!"
+                    }
+                },
+                "vote": 2
+            }
+        },
+        {
+            "role": "maninsp",
+            "translation": "Mantyke",
+            "side": "fish",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies!",
+            "actions": {
+                "night": {
+                    "scout": {
+                        "command": "inspect",
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 31
+                    }
+                }
+            }
+        },
+        {
+            "role": "maninspup",
+            "translation": "Mantine",
+            "winningSides": [
+                "fish"
+            ],
+            "side": "fishsp",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "actions": {
+                "night": {
+                    "scout": {
+                        "command": "inspect",
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 31
+                    },
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Team",
+                        "priority": 11,
+                        "broadcast": "team"
+                    }
+                }
+            }
+        },
+        {
+            "role": "manbg",
+            "translation": "Mantyke",
+            "side": "fish",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
+            "actions": {
+                "night": {
+                    "use": {
+                        "command": "safeguard",
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 4,
+                        "limit": 1
+                    }
+                }
+            }
+        },
+        {
+            "role": "manbgup",
+            "translation": "Mantine",
+            "winningSides": [
+                "fish"
+            ],
+            "side": "fishsp",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "actions": {
+                "night": {
+                    "use": {
+                        "command": "safeguard",
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 4,
+                        "limit": 2
+                    },
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Team",
+                        "priority": 11,
+                        "broadcast": "team"
+                    }
+                }
+            }
+        },
+        {
+            "role": "manvote",
+            "translation": "Mantyke",
+            "side": "fish",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way!",
+            "actions": {
+                "vote": -99
+            }
+        },
+        {
+            "role": "manvoteup",
+            "translation": "Mantine",
+            "winningSides": [
+                "fish"
+            ],
+            "side": "fishsp",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "actions": {
+                "vote": -99,
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Team",
+                        "priority": 11,
+                        "broadcast": "team"
+                    }
+                }
+            }
+        },
+        {
+            "role": "rem",
+            "translation": "Remoraid",
+            "side": "fish",
+            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them!",
+            "actions": {
+                "voteshield": -1,
+                "vote": 0.9,
+                "daykill": "evade",
+                "onDeath": {
+                    "convertRoles": {
+                        "maninsp": "maninspup",
+                        "manbg": "manbgup",
+                        "manvote": "manvoteup"
+                    },
+                    "convertmsg": "±Game: ~Self~'s dying wish was for Mantyke to level up, and thus allowed them to make the final blow. ~Old~ evolved and became ~New~!"
+                },
+                "hax": {
+                    "defend": {
+                        "revealTeam": 0.4,
+                        "revealPlayer": 0.4
+                    },
+                    "scout": {
+                        "revealTeam": 0.4,
+                        "revealPlayer": 0.4
+                    },
+                    "use": {
+                        "revealTeam": 0.4,
+                        "revealPlayer": 0.4
+                    },
+                    "hax": {
+                        "revealTeam": 0.4,
+                        "revealPlayer": 0.4
+                    }
+                },
+                "standby": {
+                    "reveal": {
+                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                    }
+                }
+            }
+        },
+        {
+            "role": "al",
+            "translation": "Alomomola",
+            "side": "fish",
+            "help": "You are an Alomomola! You have uh...about...OVER 9000 HP!!! More like 500, but still. Because of this HP amount, your vote is increased to 50, meaning no one but the -99 vote Mantyke can stop it(but he's on your team anyway)! You can also spam the command /hax [Your Name]! If you spam this enough, the Remoraid might connect you with other Alliance!",
+            "actions": {
+                "night": {
+                    "hax": {
+                        "command": "protect",
+                        "target": "Self",
+                        "common": "Self",
+                        "priority": 99
+                    }
+                },
+                "vote": 50
+            }
+        },
+        {
+            "role": "float",
+            "translation": "Floatzel",
+            "side": "float",
+            "help": "You are a Floatzel! You are from a different region that nobody else is from. You came to this region due to the fact that your region has some *hint*incredible idiots*hint*. Being a Floatzel, you can /kill 2 people during the night! If any tries to kill you, you will take them down with you! You will ignore all distracters and wrappers (which is basically a distracter). You cannot be daykilled, and your vote counts as 2! Sound OP? Nope, because you are only sided with yourself.",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 15,
+                        "limit": 2
+                    }
+                },
+                "distract": {
+                    "mode": "ignore",
+                    "msg": "The ~Distracter~ tried to distract you during the night, but you didn't see them due to how blind you are during the night!"
+                },
+                "kill": {
+                    "mode": "killattacker"
+                },
+                "daykill": "evade",
+                "vote": 2,
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "luv",
+            "translation": "Luvdisc",
+            "side": "luv",
+            "help": "You are a Luvdisc. HAHAHAHAHAHAHA, you got the weakest role in this theme(Blame the GameBot). But actually, you are here to show your true capabilities as a Luvdisc. You cannot be nightkilled due to the killer thinking that you are worthless. You can /distract 1 person during the night with your fail. Plus, you can /kill 1 person during the standby(By making them laugh to death)! But you are all alone...I wish you good luck (you'll need it).",
+            "actions": {
+                "night": {
+                    "distract": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 3
+                    }
+                },
+                "standby": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "msg": "You can now kill someone with /kill [name] :",
+                        "killmsg": " ~Target~ : Hey, Joey, what are you using against the Elite Four? Joey: I am using a Luvdisc! ~Target~ : ......HAHAHAHAHAHAHAHAHAHAHAHA! ~Target~ dies of laughter."
+                    }
+                },
+                "kill": {
+                    "mode": "ignore"
+                },
+                "avoidHax": [
+                    "distract"
+                ]
+            }
+        },
+        {
+            "role": "reli",
+            "translation": "Relicanth",
+            "side": "reli",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed. But you are only sided with yourself.",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "reli2",
+            "translation": "Relicanth",
+            "side": "reli",
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+                        "command": "reveal",
+                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                    }
+                },
+                "daykill": "evade",
+                "startup": "team-reveal",
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "chin1",
+            "translation": "C​hinchou",
+            "side": "chin",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 17,
+                        "broadcast": "role"
+                    }
+                },
+                "startup": "role-reveal"
+            }
+        },
+        {
+            "role": "chin2",
+            "translation": "C​hinchou",
+            "side": "chin",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 18,
+                        "broadcast": "role"
+                    }
+                },
+                "startup": "role-reveal"
+            }
+        },
+        {
+            "role": "chin3",
+            "translation": "C​hinchou",
+            "side": "chin",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!!",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButRole",
+                        "common": "Role",
+                        "priority": 19,
+                        "broadcast": "role"
+                    }
+                },
+                "startup": "role-reveal"
+            }
+        }
+    ],
+    "roles1": [
+        "fin",
+        "insp",
+        "chin1",
+        "fin",
+        "reli",
+        "man",
+        "chin3",
+        "mayor",
+        "maninsp",
+        "hooker",
+        "lan",
+        "rem",
+        "bg",
+        "tenta1",
+        "manbg",
+        "lum",
+        "chin3",
+        "oct",
+        "vigi"
+    ],
+    "roles2": [
+        "unkill",
+        "insp",
+        "chin1",
+        "fin",
+        "man",
+        "fin",
+        "chin3",
+        "maninsp",
+        "hooker",
+        "lan",
+        "rem",
+        "bg",
+        "tenta1",
+        "manbg",
+        "lum",
+        "chin2",
+        "oct",
+        "vigi",
+        "chin1",
+        "al",
+        "tenta2",
+        "lum",
+        "manvote",
+        "reli2",
+        "fin",
+        "luv",
+        "float",
+        "fin",
+        "oct",
+        "chin2",
+        "fin"
+    ],
+    "villageCantLoseRoles": [
+        "lum",
+        "vigi",
+        "mayor"
+    ],
+    "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
+    "killusermsg": "±Death: You were killed! Rip in peace!"
+}
