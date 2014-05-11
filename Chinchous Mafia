@@ -300,14 +300,18 @@
                 }
             }
         },
+        
         {
             "role": "man",
             "translation": "Mantine",
             "side": "fish",
             "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!) Your vote counts as 2 as well. ",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 11
@@ -329,8 +333,11 @@
             "side": "fish",
             "help": "You are an Octillery! You are a commander of the Alliance, allowing you to /kill 1 person during the night. You may also /kill one person during the day, but this will get you revealed, so it is a sacrificial move, only use it in desperate situations (Or in situations where you can't lose)! Your vote will also count as 2.",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 10
@@ -352,8 +359,11 @@
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies!",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
+						"command": ["kill", "dummy10"],
                         "command": "inspect",
                         "target": "AnyButSelf",
                         "common": "Self",
@@ -371,6 +381,8 @@
             "side": "fishsp",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
                         "command": "inspect",
@@ -379,6 +391,7 @@
                         "priority": 31
                     },
                     "kill": {
+						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -393,6 +406,8 @@
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
                         "command": "safeguard",
@@ -413,6 +428,8 @@
             "side": "fishsp",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
                         "command": "safeguard",
@@ -422,6 +439,7 @@
                         "limit": 2
                     },
                     "kill": {
+						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -436,6 +454,8 @@
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way!",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "vote": -99
             }
         },
@@ -448,9 +468,12 @@
             "side": "fishsp",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "vote": -99,
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -463,8 +486,10 @@
             "role": "rem",
             "translation": "Remoraid",
             "side": "fish",
-            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them!",
+            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show at anyone who you are and try to connect your friends.",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "voteshield": -1,
                 "vote": 0.9,
                 "daykill": "evade",
@@ -495,6 +520,7 @@
                     }
                 },
                 "standby": {
+                "msg": "Type /reveal to show everyone who you are, but think twice before to do so!",
                     "reveal": {
                         "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
                     }
@@ -507,6 +533,8 @@
             "side": "fish",
             "help": "You are an Alomomola! You have uh...about...OVER 9000 HP!!! More like 500, but still. Because of this HP amount, your vote is increased to 50, meaning no one but the -99 vote Mantyke can stop it(but he's on your team anyway)! You can also spam the command /hax [Your Name]! If you spam this enough, the Remoraid might connect you with other Alliance!",
             "actions": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "hax": {
                         "command": "protect",
