@@ -78,6 +78,43 @@
             }
         },
         {
+            "role": "bomb",
+            "translation": "Finneon",
+            "side": "village",
+            "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
+            "actions": {
+                "hax": {
+                    "kill": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "poison": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "inspect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "distract": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    },
+                    "rally": {
+                        "revealTeam": 0,
+                        "revealPlayer": 1
+                    },
+                    "protect": {
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.2
+                    }
+                },
+                "kill": {
+                    "mode": "killattacker"
+                }
+            }
+        },
+        {
             "role": "mayor",
             "translation": "Finneon",
             "side": "village",
@@ -168,10 +205,12 @@
             "side": "tenta",
             "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
             "actions": {
+				"teamTalk": true,
                 "night": {
                     "wrap": {
                         "command": "distract",
-                        "target": "AnyButSelf",
+                        "target": "AnyButTeam",
+                        "broadcast": "team",
                         "common": "Role",
                         "priority": 2,
                         "restrict": [
@@ -189,8 +228,9 @@
                         ]
                     },
                     "poison": {
-                        "target": "AnyButSelf",
-                        "common": "Self",
+                        "target": "AnyButTeam",
+                        "common": "Team",
+                        "broadcast": "team",
                         "priority": 5,
                         "restrict": [
                             "hide"
@@ -202,21 +242,52 @@
             }
         },
         {
+            "role": "dragalge",
+            "translation": "Dragalge",
+            "side": "tenta",
+            "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Tentacool's since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
+            "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Tentacool.",
+			"actions": {
+				"teamTalk": true,
+                "night": {
+                    "poison": {
+                        "target": "AnyButTeam",
+                        "common": "Team",
+                        "broadcast": "team",
+                        "priority": 5
+                    },
+                    "kill": {
+                        "target": "AnyButTeam",
+                        "common": "Team",
+						"limit": 1,
+						"charges": 3,
+                        "broadcast": "team",
+                        "priority": 7
+                    }
+                },
+				"daykill": "evade",
+                "startup": "team-reveal"
+            }
+        },
+        {
             "role": "tenta2",
             "translation": "Tentacruel",
             "side": "tenta",
             "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can also do everything that Tentacool can do. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
             "actions": {
+				"teamTalk": true,
                 "night": {
                     "wrap": {
                         "command": "distract",
-                        "target": "AnyButSelf",
+                        "target": "AnyButTeam",
+                        "broadcast": "team",
                         "common": "Role",
                         "priority": 3
                     },
                     "poison": {
-                        "target": "AnyButSelf",
+                        "target": "AnyButTeam",
                         "common": "Self",
+                        "broadcast": "team",
                         "priority": 6
                     }
                 },
@@ -300,7 +371,6 @@
                 }
             }
         },
-        
         {
             "role": "man",
             "translation": "Mantine",
@@ -363,7 +433,6 @@
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
-						"command": ["kill", "dummy10"],
                         "command": "inspect",
                         "target": "AnyButSelf",
                         "common": "Self",
@@ -520,8 +589,8 @@
                     }
                 },
                 "standby": {
-                "msg": "Type /reveal to show everyone who you are, but think twice before to do so!",
                     "reveal": {
+                "msg": "Type /reveal to show everyone who you are, but think twice before to do so!",
                         "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
                     }
                 }
@@ -639,7 +708,9 @@
                 },
                 "standby": {
                     "lie": {
-                        "command": "reveal",
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
                         "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
                     }
                 },
@@ -648,6 +719,25 @@
                 "avoidHax": [
                     "kill"
                 ]
+            }
+        },
+        {
+            "role": "schin",
+            "translation": "Shiny C​hinchou",
+            "side": "chin",
+            "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills/daykills from them! ",
+            "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills/daykills from Chinchous team. Sided with itself.",
+			"actions": {
+				"vote": 99,
+                "kill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } }, "daykill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } },
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 17,
+                        "broadcast": "role"
+                    }
+                }
             }
         },
         {
@@ -764,3 +854,4 @@
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
     "killusermsg": "±Death: You were killed! Rip in peace!"
 }
+
