@@ -32,6 +32,10 @@
             "translation": "Relicanth"
         },
         {
+            "side": "shiny",
+            "translation": "Shiny Chinchou"
+        },
+        {
             "side": "chin",
             "translation": "Chinchou Military Army"
         }
@@ -724,7 +728,7 @@
         {
             "role": "schin",
             "translation": "Shiny C​hinchou",
-            "side": "chin",
+            "side": "shiny",
             "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills/daykills from them! ",
             "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills/daykills from Chinchous team. Sided with itself.",
 			"actions": {
