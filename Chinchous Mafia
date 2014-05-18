@@ -36,6 +36,10 @@
             "translation": "Shiny Chinchou"
         },
         {
+            "side": "ugly",
+            "translation": "Ugly Ducklings"
+        },
+        {
             "side": "chin",
             "translation": "Chinchou Military Army"
         }
@@ -44,6 +48,7 @@
         {
             "role": "fin",
             "translation": "Finneon",
+			"infoName": "Finneon (Villager)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
             "actions": {
@@ -84,6 +89,8 @@
         {
             "role": "bomb",
             "translation": "Finneon",
+			"infoName": "Finneon (Bomb)",
+			"info":"Sees itself as a Finneon. Receives hax on Kill and Poison. 8% to avoid all nightkills. Brings it's killer down with it when killed. Sided with Finneons.",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
             "actions": {
@@ -121,6 +128,7 @@
         {
             "role": "mayor",
             "translation": "Finneon",
+			"infoName": "Finneon (Mayor)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. When you were raised, you wanted to be a leader. And you got your wish! You are the mayor of the Finneons, your vote counting as 5. You also recieve hax on Kill, Poison, and on PRs of your team!",
             "actions": {
@@ -156,6 +164,7 @@
         {
             "role": "vigi",
             "translation": "Finneon",
+			"infoName": "Finneon (Vigilante)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. But, luckily for you, the Lumineons have trained you to become the strongest Finneon ever. Somehow they trained so much that you can /kill another Pokemon during the night!",
             "actions": {
@@ -171,11 +180,62 @@
         {
             "role": "unkill",
             "translation": "Finneon",
+			"infoName": "Finneon (BulletProof)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. You are even weaker than the other Finneons, as you run from battle every time. However, this means you cannot be nightkilled, as you sleep in caves, hiding from the Chinchous. But for some strange reason you're brave enough to come out during the day (I don't really know why) so you're still vulnerable to daykills.",
             "actions": {
                 "kill": {
                     "mode": "ignore"
+                }
+            }
+        },
+        {
+            "role": "insp",
+            "translation": "Finneon",
+			"infoName": "Finneon (Inspector)",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
+            "actions": {
+                "night": {
+                    "inspect": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 30
+                    }
+                }
+            }
+        },
+        {
+            "role": "hooker",
+            "translation": "Finneon",
+			"infoName": "Finneon (Distractor)",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
+            "actions": {
+                "night": {
+                    "distract": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 1,
+                        "limit": 1
+                    }
+                }
+            }
+        },
+        {
+            "role": "bg",
+            "translation": "Finneon",
+			"infoName": "Finneon (Protector)",
+            "side": "village",
+            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
+            "actions": {
+                "night": {
+                    "protect": {
+                        "target": "AnyButSelf",
+                        "common": "Role",
+                        "priority": 8,
+                        "limit": 1
+                    }
                 }
             }
         },
@@ -303,79 +363,6 @@
             }
         },
         {
-            "role": "lan",
-            "translation": "Lanturn",
-            "side": "chin",
-            "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can both nightkill AND daykill(Using /kill)! You also have 2 votes instead of 1. But that's about it...",
-            "actions": {
-                "night": {
-                    "kill": {
-                        "target": "AnyButSelf",
-                        "common": "Self",
-                        "priority": 14
-                    }
-                },
-                "standby": {
-                    "kill": {
-                        "target": "AnyButSelf",
-                        "msg": "You can now kill someone with /kill [name] :",
-                        "killmsg": "Lanturn used Thunder! A Critical Hit! ~Target~ Fainted!"
-                    }
-                },
-                "vote": 2,
-                "avoidHax": [
-                    "kill"
-                ]
-            }
-        },
-        {
-            "role": "insp",
-            "translation": "Finneon",
-            "side": "village",
-            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
-            "actions": {
-                "night": {
-                    "inspect": {
-                        "target": "AnyButSelf",
-                        "common": "Self",
-                        "priority": 30
-                    }
-                }
-            }
-        },
-        {
-            "role": "hooker",
-            "translation": "Finneon",
-            "side": "village",
-            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
-            "actions": {
-                "night": {
-                    "distract": {
-                        "target": "AnyButSelf",
-                        "common": "Self",
-                        "priority": 1,
-                        "limit": 1
-                    }
-                }
-            }
-        },
-        {
-            "role": "bg",
-            "translation": "Finneon",
-            "side": "village",
-            "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
-            "actions": {
-                "night": {
-                    "protect": {
-                        "target": "AnyButSelf",
-                        "common": "Role",
-                        "priority": 8,
-                        "limit": 1
-                    }
-                }
-            }
-        },
-        {
             "role": "man",
             "translation": "Mantine",
             "side": "fish",
@@ -430,6 +417,7 @@
         {
             "role": "maninsp",
             "translation": "Mantyke",
+			"infoName": "Mantyke (Inspector)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies!",
             "actions": {
@@ -448,6 +436,7 @@
         {
             "role": "maninspup",
             "translation": "Mantine",
+			"hide": true,
             "winningSides": [
                 "fish"
             ],
@@ -476,6 +465,7 @@
         {
             "role": "manbg",
             "translation": "Mantyke",
+			"infoName": "Mantyke (Protector)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
             "actions": {
@@ -495,6 +485,7 @@
         {
             "role": "manbgup",
             "translation": "Mantine",
+			"hide": true,
             "winningSides": [
                 "fish"
             ],
@@ -524,6 +515,7 @@
         {
             "role": "manvote",
             "translation": "Mantyke",
+			"infoName": "Mantyke (Mayor)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way!",
             "actions": {
@@ -535,6 +527,7 @@
         {
             "role": "manvoteup",
             "translation": "Mantine",
+			"hide": true,
             "winningSides": [
                 "fish"
             ],
@@ -738,21 +731,48 @@
                     "kill": {
                         "target": "AnyButSelf",
                         "common": "Role",
-                        "priority": 17,
+                        "priority": 10,
                         "broadcast": "role"
                     }
                 }
             }
         },
         {
+            "role": "lan",
+            "translation": "Lanturn",
+            "side": "chin",
+            "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can both nightkill AND daykill(Using /kill)! You also have 2 votes instead of 1. But that's about it...",
+            "actions": {
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 14
+                    }
+                },
+                "standby": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "msg": "You can now kill someone with /kill [name] :",
+                        "killmsg": "Lanturn used Thunder! A Critical Hit! ~Target~ Fainted!"
+                    }
+                },
+                "vote": 2,
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
             "role": "chin1",
             "translation": "C​hinchou",
+			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
             "actions": {
                 "night": {
                     "kill": {
-                        "target": "AnyButSelf",
+                        "target": "AnyButRole",
                         "common": "Role",
                         "priority": 17,
                         "broadcast": "role"
@@ -764,12 +784,13 @@
         {
             "role": "chin2",
             "translation": "C​hinchou",
+			"hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
             "actions": {
                 "night": {
                     "kill": {
-                        "target": "AnyButSelf",
+                        "target": "AnyButRole",
                         "common": "Role",
                         "priority": 18,
                         "broadcast": "role"
@@ -781,6 +802,7 @@
         {
             "role": "chin3",
             "translation": "C​hinchou",
+			"hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!!",
             "actions": {
@@ -793,6 +815,87 @@
                     }
                 },
                 "startup": "role-reveal"
+            }
+        },
+        {
+            "role": "magikarp",
+            "translation": "Magikarp",
+            "side": "ugly",
+            "help": "The other fishes thinks that you are weak and useless, so you and Feebas decided to show them that they are wrong. You evade 70% of the time any kill during the night. If Feebas dies or after 4 nights you will evolve into a Furious Gyarados!",
+            "info": "Has 70% chance to evade night-kills. If Feebas dies or after 4 nights Magikarp will evolve into a Gyarados. Sided with the Ugly Ducklings.",
+			"actions": {
+                "initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
+                    } },
+                "startup": "team-reveal",
+                "kill": { "mode": {"evadeChance": 0.7}},
+                "vote": 1,
+                "onDeath": {
+                    "convertRoles": {
+                        "magikarp": "gyarados",
+                        "feebas": "milotic"
+                    },
+                    "convertmsg": "±Game: ~Self~'s dying wish was for Feebas to level up, and thus allowed them to make the final blow. ~Old~ evolved and became ~New~!"
+                }
+            }
+        },
+        {
+            "role": "gyarados",
+            "translation": "Gyarados",
+            "side": "ugly",
+            "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last!",
+            "info": "Evade night-kills. Can poison 3 targets every night which will die the next night. Sided with the Ugly Ducklings.",
+			"actions": {
+                "startup": "team-reveal",
+                "kill": { "mode": "ignore"},
+                "night": {
+                    "rage": {
+						"command": "poison",
+                        "target": "AnyButTeam",
+                        "common": "Team",
+						"poisonmsg": "Your sent a cyclone to ~Target~, they will die the next night!",
+						"poisontarmsg": "A giant cyclone is going to devastate you!",
+                        "poisonDeadMessage": "A cyclone filled with Gyarados' rage has killed you!",
+                        "broadcast": "team",
+						"limit": 3,
+                        "priority": 2
+                    }
+                }
+            }
+        },
+        {
+            "role": "feebas",
+            "translation": "Feebas",
+            "side": "ugly",
+            "help": "The other fishes thinks that you are the most ugly thing that they ever seen, so you and Magikarp decided to show them that they are wrong. You evade 70% of the time any kill during the night. You have a -1 vote-shield. If Magikarp dies or after 4 nights you will evolve into a Beautiful Milotic!",
+            "info": "Has 70% chance to evade day-kills. Has a vote-shield equal to -1. If Magikarp dies or after 4 nights Feebas will evolve into a Milotic. Sided with the Ugly Ducklings.",
+			"actions": {
+                "initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"
+                    } },
+                "startup": "team-reveal",
+                "daykill": { "mode": {"evadeChance": 0.7}},
+                "voteshield": -1,
+                "onDeath": {
+                    "convertRoles": {
+                        "magikarp": "gyarados",
+                        "feebas": "milotic"
+                    },
+                    "convertmsg": "±Game: ~Self~'s dying wish was for Magikarp to level up, and thus allowed them to make the final blow. ~Old~ evolved and became ~New~!"
+                }
+            }
+        },
+        {
+            "role": "milotic",
+            "translation": "Milotic",
+            "side": "ugly",
+            "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last!",
+            "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
+			"actions": {
+                "startup": "team-reveal",
+                "daykill": "evade",
+				"voteshield": -999,
+				"vote": 999
             }
         }
     ],
@@ -853,7 +956,8 @@
     "villageCantLoseRoles": [
         "lum",
         "vigi",
-        "mayor"
+        "mayor",
+		"bomb"
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
     "killusermsg": "±Death: You were killed! Rip in peace!"
