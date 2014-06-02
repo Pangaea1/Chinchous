@@ -1,53 +1,67 @@
 {
     "name": "Chinchous",
-    "author": "Pangaea",
-    "summary": "The original Chinchous theme, back and better than ever before! | The Chinchous have come from the Arctic to invade the Pacific Ocean! | Notes: Lanturn and Lumineon can daykill. Octillery has a revealing daykill. Tentacool and Tentacruel can poison. Alomomola has 50 votes. One of the Mantykes has -99 votes. May the best fish/octopus/stingray/etc. win! *V10.6: Gave Remoraid a voteshield of -1 so that it isn't helpless without it's team. Also gave it 0.9 votes to not stall with Lumineon. | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea.",
-    "sides": [
+    "author": ["Pangaea", "Obey To Kyubey"],
+    "summary": "The original Chinchous theme, back and better than ever before! | The Chinchous have come from the Arctic to invade the Pacific Ocean! | Notes: Lanturn and Lumineon can daykill. Octillery has a revealing daykill. Tentacool and Tentacruel can poison. Alomomola has 50 votes. One of the Mantykes has -99 votes. May the best fish/octopus/stingray/etc. win! *V10.6: Gave Remoraid a voteshield of -1 so that it isn't helpless without it's team. Also gave it 0.9 votes to not stall with Lumineon. | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
+    "variables":{
+				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
+				},
+	"sides": [
         {
             "side": "village",
-            "translation": "Finneons"
+            "translation": "Finneons",
+            "winmsg": "They said we were weak, little Pokemon...but we showed them. Now we, ~Players~, the Finneons (and Lumineon, if he's still alive) have saved the ocean! CHINCHOUS SUCK!!"
         },
         {
             "side": "float",
-            "translation": "Floatzel"
+            "translation": "Floatzel",
+            "winmsg": "Everyone else in my region were idiots...except me! I, ~Players~, the Floatzel, shall now rule the ocean."
         },
         {
             "side": "luv",
-            "translation": "Luvdisc"
+            "translation": "Luvdisc",
+            "winmsg": "Lol there's no way Luvdisc is going to wi---wait, they won?! How is this even possible? The weakest Pokemon in existence, ~Players~, defeated everyone else. Excuse me while I go rethink my entire life."
         },
         {
             "side": "tenta",
-            "translation": "Squids"
+            "translation": "Toxic Fishes",
+            "winmsg": "~Players~ have managed to poison every fish in the ocean! Ok, maybe not every fish, but at least those ugly Chinchous are gone now!"
         },
         {
             "side": "fish",
-            "translation": "Alliance"
+            "translation": "Alliance",
+            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
         },
         {
             "side": "fishsp",
-            "translation": "Alliance"
+            "translation": "Alliance",
+            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
         },
         {
             "side": "reli",
-            "translation": "Relicanth"
+            "translation": "Relicanth",
+            "winmsg": "Ah! Finally! Some peace and quiet...time for me, ~Players~, the Relicanth, to get some shut eye! Zzz..."
         },
         {
             "side": "shiny",
-            "translation": "Shiny Chinchou"
+            "translation": "Shiny Chinchou",
+            "winmsg": "I am Shiny Chinchou, truly the most awesomest Pokemon EVAR! I, ~Players~, am cooler than all the other Chinchous. Now I shall light up the ocean with my shine and awesomeness! "
         },
         {
             "side": "ugly",
-            "translation": "Ugly Ducklings"
+            "translation": "Ugly Ducklings",
+            "winmsg": "They said we were the ugliest fish in the ocean...and they were probably right. But that doesn't matter now, because we, ~Players~, will rule the ocean!"
         },
         {
             "side": "chin",
-            "translation": "Chinchou Military Army"
+            "translation": "Chinchou Military Army",
+            "winmsg": "We, ~Players~, are the coolest, most awesomest Pokemon EVAR! We are too pro for all those other dead fish...CHINCHOUS RULE."
         }
     ],
     "roles": [
         {
             "role": "fin",
             "translation": "Finneon",
+			"info": "A basic villager with a chance of hax. Sided with the Finneons.",
 			"infoName": "Finneon (Villager)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
@@ -70,8 +84,8 @@
                         "revealPlayer": 0.2
                     },
                     "rally": {
-                        "revealTeam": 0,
-                        "revealPlayer": 1
+                        "revealTeam": 0.3,
+                        "revealPlayer": 0.3
                     },
                     "protect": {
                         "revealTeam": 0.2,
@@ -112,8 +126,8 @@
                         "revealPlayer": 0.2
                     },
                     "rally": {
-                        "revealTeam": 0,
-                        "revealPlayer": 1
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.3
                     },
                     "protect": {
                         "revealTeam": 0.2,
@@ -126,13 +140,46 @@
             }
         },
         {
+            "role": "lovera",
+            "translation": "Finneon",
+			"infoName": "Finneon (Lover)",
+            "side": "village",
+            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3 use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
+            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
+            "actions": {
+				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
+                "onDeath": {
+                    "convertRoles": { "lovera": "loverb" },
+                    "convertmsg": "±Game: With their Lover gone, the other Finneon (Lover) loses their vote for the sadness!"
+                },
+				"teamTalk": [ "lovera"],
+                "startup": { "revealRole": "lovera" }
+            }
+        },
+        {
+            "role": "loverb",
+            "translation": "Finneon",
+			"infoName": "Finneon (Lover)",
+			"hide": true,
+            "side": "village",
+            "help": "Your lover has died, and all you can think about is their soft touch...and the way their fins moved while they swam...and those gorgeous never-closing eyes...therefore you have no time to think about voting so your vote counts as 0.",
+            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
+            "actions": {
+				"vote":0,
+				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
+				"teamTalk": [ "lovera"],
+                "startup": { "revealRole": "lovera" }
+            }
+        },
+        {
             "role": "mayor",
             "translation": "Finneon",
+			"info": "A mayor with a vote of 3 and a chance of hax. Sided with the Finneons.",
 			"infoName": "Finneon (Mayor)",
             "side": "village",
-            "help": "You are a Finneon, a weak little Pokemon. When you were raised, you wanted to be a leader. And you got your wish! You are the mayor of the Finneons, your vote counting as 5. You also recieve hax on Kill, Poison, and on PRs of your team!",
+            "help": "You are a Finneon, a weak little Pokemon. When you were raised, you wanted to be a leader. And you got your wish! You are the mayor of the Finneons, your vote counting as 3. You also recieve hax on Kill, Poison, and on PRs of your team!",
             "actions": {
-                "vote": 5,
+                "vote": 3,
                 "hax": {
                     "kill": {
                         "revealTeam": 0.1,
@@ -151,8 +198,8 @@
                         "revealPlayer": 0.2
                     },
                     "rally": {
-                        "revealTeam": 0,
-                        "revealPlayer": 1
+                        "revealTeam": 0.2,
+                        "revealPlayer": 0.3
                     },
                     "protect": {
                         "revealTeam": 0.2,
@@ -164,6 +211,7 @@
         {
             "role": "vigi",
             "translation": "Finneon",
+			"info": "Can kill one person during the night. Sided with the Finneons.",
 			"infoName": "Finneon (Vigilante)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. But, luckily for you, the Lumineons have trained you to become the strongest Finneon ever. Somehow they trained so much that you can /kill another Pokemon during the night!",
@@ -180,6 +228,7 @@
         {
             "role": "unkill",
             "translation": "Finneon",
+			"info": "Avoids all nightkills. Sided with the Finneons.",
 			"infoName": "Finneon (BulletProof)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. You are even weaker than the other Finneons, as you run from battle every time. However, this means you cannot be nightkilled, as you sleep in caves, hiding from the Chinchous. But for some strange reason you're brave enough to come out during the day (I don't really know why) so you're still vulnerable to daykills.",
@@ -192,6 +241,7 @@
         {
             "role": "insp",
             "translation": "Finneon",
+			"info": "Can inspect one person during the night. Sided with the Finneons.",
 			"infoName": "Finneon (Inspector)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
@@ -208,6 +258,7 @@
         {
             "role": "hooker",
             "translation": "Finneon",
+			"info": "A basic villager with a chance of hax. Sided with the Finneons.",
 			"infoName": "Finneon (Distractor)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
@@ -225,6 +276,7 @@
         {
             "role": "bg",
             "translation": "Finneon",
+			"info": "Can protect one person during the night. Sided with the Finneons.",
 			"infoName": "Finneon (Protector)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
@@ -242,13 +294,15 @@
         {
             "role": "lum",
             "translation": "Lumineon",
+			"info": "A non-revealing day killer. Can rally during the night so Finneons can receive hax on the user. Vote counts as 2. Sided with the Finneons.",
             "side": "village",
             "help": "You are a Lumineon, and you have evolved from your weak form. CHINCHOUS SUCK. You can finally fight back against the Chinchous and kill them...slowly and painfully...during the standby using /kill! Since you are a leader of the Finneons now, you can also call the Finneons with /rally [insert random player name here] for the Finneons to get hax on you! Sad thing is that you can no longer receive hax on Kill or Poison (unlike your Finneon friends.) Your vote also counts as 2.",
             "actions": {
                 "night": {
                     "rally": {
-                        "command": "protect",
-                        "target": "Self",
+                        "command": "dummy",
+                        "target": "Any",
+						"restrict": ["rally"],
                         "common": "Self",
                         "priority": 99
                     }
@@ -266,6 +320,7 @@
         {
             "role": "tenta1",
             "translation": "Tentacool",
+			"info": "Can poison one person during the night, killing them the following night. Can hide during the night to avoid all nightkills, but can't use any other actions during that night. Can also wrap someone during the night, acting as a distract. Vote counts as -2. Sided with the Toxic Fishes.",
             "side": "tenta",
             "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
             "actions": {
@@ -310,7 +365,7 @@
             "translation": "Dragalge",
             "side": "tenta",
             "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Tentacool's since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
-            "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Tentacool.",
+            "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Toxic Fishes.",
 			"actions": {
 				"teamTalk": true,
                 "night": {
@@ -336,6 +391,7 @@
         {
             "role": "tenta2",
             "translation": "Tentacruel",
+			"info": "Can poison one person during the night, killing them the following night. Can wrap someone during the night, acting as a distract. Avoids all nightkills. Vote counts as 2. Sided with the Toxic Fishes.",
             "side": "tenta",
             "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can also do everything that Tentacool can do. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
             "actions": {
@@ -365,6 +421,7 @@
         {
             "role": "man",
             "translation": "Mantine",
+			"info": "Can kill one person during the night. Can defend (protect) two people during the night. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
             "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!) Your vote counts as 2 as well. ",
             "actions": {
@@ -391,6 +448,7 @@
         {
             "role": "oct",
             "translation": "Octillery",
+			"info": "Can kill one person during the night. Can also kill someone during the day, but will be revealed. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
             "help": "You are an Octillery! You are a commander of the Alliance, allowing you to /kill 1 person during the night. You may also /kill one person during the day, but this will get you revealed, so it is a sacrificial move, only use it in desperate situations (Or in situations where you can't lose)! Your vote will also count as 2.",
             "actions": {
@@ -417,6 +475,7 @@
         {
             "role": "maninsp",
             "translation": "Mantyke",
+			"info": "Can scout (inspect) one person during the night. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Inspector)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies!",
@@ -465,6 +524,7 @@
         {
             "role": "manbg",
             "translation": "Mantyke",
+			"info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Protector)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
@@ -515,6 +575,7 @@
         {
             "role": "manvote",
             "translation": "Mantyke",
+			"info": "Vote counts as -99. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Mayor)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way!",
@@ -551,6 +612,7 @@
         {
             "role": "rem",
             "translation": "Remoraid",
+			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
             "side": "fish",
             "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show at anyone who you are and try to connect your friends.",
             "actions": {
@@ -596,6 +658,8 @@
         {
             "role": "al",
             "translation": "Alomomola",
+			"info": "Vote counts as 50. Can use hax during the night so Remoraid can find Alomomola during the night via hax. Sided with the Alliance.",
+			"hide": true,
             "side": "fish",
             "help": "You are an Alomomola! You have uh...about...OVER 9000 HP!!! More like 500, but still. Because of this HP amount, your vote is increased to 50, meaning no one but the -99 vote Mantyke can stop it(but he's on your team anyway)! You can also spam the command /hax [Your Name]! If you spam this enough, the Remoraid might connect you with other Alliance!",
             "actions": {
@@ -615,6 +679,7 @@
         {
             "role": "float",
             "translation": "Floatzel",
+			"info": "Can kill two people during the night. Brings its killer down with it when killed. Ignores all distracts and avoids all daykills. Vote counts as 2. Sided with itself.",
             "side": "float",
             "help": "You are a Floatzel! You are from a different region that nobody else is from. You came to this region due to the fact that your region has some *hint*incredible idiots*hint*. Being a Floatzel, you can /kill 2 people during the night! If any tries to kill you, you will take them down with you! You will ignore all distracters and wrappers (which is basically a distracter). You cannot be daykilled, and your vote counts as 2! Sound OP? Nope, because you are only sided with yourself.",
             "actions": {
@@ -643,6 +708,7 @@
         {
             "role": "luv",
             "translation": "Luvdisc",
+			"info": "Can kill one person during the day (non-revealing). Can distract one person during the night. Avoids all nightkills. Sided with itself.",
             "side": "luv",
             "help": "You are a Luvdisc. HAHAHAHAHAHAHA, you got the weakest role in this theme(Blame the GameBot). But actually, you are here to show your true capabilities as a Luvdisc. You cannot be nightkilled due to the killer thinking that you are worthless. You can /distract 1 person during the night with your fail. Plus, you can /kill 1 person during the standby(By making them laugh to death)! But you are all alone...I wish you good luck (you'll need it).",
             "actions": {
@@ -669,8 +735,180 @@
             }
         },
         {
+            "role": "alomm",
+            "translation": "Alomomola♂",
+            "side": "luv",
+            "help": "A Luvdisc made You fell in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
+            "actions": {
+				"convert": { "silent": true,"mode": {"ignore": ["luvb"]} }, "copy": { "silent": true,"mode": {"ignore": ["luvb"]} }, "curse": { "silent": true,"mode": {"ignore": ["luvb"]} },
+                "night": {
+                    "kill": {
+                        "target": "AnyButTeam",
+                        "common": "Self",
+                        "priority": 18,
+                        "broadcast": "team"
+                    }
+                },
+                "onDeath": {
+                    "killRoles": [
+                        "alomf"
+                    ],
+                    "convertRoles": {
+                        "luvc": "luva"
+                    },
+                    "killmsg": "±Game: With ~Self~'s death, ~Target~ couldn't bear the pain of losing their lover and died too!",
+                    "convertmsg": "±Game: With the Alomomolas gone, the Luvdisc is out to form a new couple!"
+                },
+                "initialCondition": {
+                    "clearPoison": true
+                },
+                "startup": "team-reveal-with-roles"
+            }
+        },
+        {
+            "role": "alomf",
+            "translation": "Alomomola♀",
+            "side": "luv",
+            "help": "A Luvdisc made You fell in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
+            "actions": {
+                "night": {
+                    "distract": {
+                        "target": "AnyButTeam",
+                        "common": "Self",
+                        "priority": 1,
+                        "broadcast": "team"
+                    }
+                },
+                "onDeath": {
+                    "killRoles": [
+                        "alomm"
+                    ],
+                    "convertRoles": {
+                        "luvc": "luva"
+                    },
+                    "killmsg": "±Game: With ~Self~'s death, ~Target~ couldn't bear the pain of losing their lover and died too!",
+                    "convertmsg": "±Game: With the Alomomolas gone, the Luvdisc is out to form a new couple!"
+                },
+                "initialCondition": {
+                    "clearPoison": true
+                },
+                "startup": "team-reveal-with-roles"
+            }
+        },
+        {
+            "role": "luva",
+            "translation": "Luvdisc",
+            "side": "luv",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
+            "actions": {
+                "night": {
+                    "love": {
+                        "command": [ "curse", "convert", "copy"],
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 24,
+                        "charges": 2,
+                        "limit": 2,
+						"usermsg": "",
+                        "newRole": "alomm",
+						"curseCount": 1,
+						"cursedRole": "variable:luvdisc curse",
+						"convertfailmsg": "",
+						"copyfailmsg": "",
+						"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
+						"copyAs": "luvb"
+                    },
+                    "protect": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 10
+                    }
+                },
+                "startup": "team-reveal-with-roles"
+            }
+        },
+        {
+            "role": "luvb",
+            "translation": "Luvdisc",
+            "side": "luv",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "hide": true,
+            "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
+            "actions": {
+                "initialCondition": {
+                    "curse": {
+                        "cursedRole": "luva",
+                        "curseCount": 1,
+                        "silentCurse": true
+                    }
+                },
+                "night": {
+                    "love": {
+                        "command": [ "curse", "convert", "copy"],
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 24,
+                        "charges": 2,
+                        "limit": 2,
+						"usermsg": "",
+                        "newRole": "alomf",
+						"curseCount": 1,
+						"cursedRole": "variable:luvdisc curse",
+						"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
+						"copyfailmsg": "",
+						"silentCurse": true, "silent": true, "silentConvert": true,
+						"copyAs": "luvc"
+                    },
+                    "protect": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 10
+                    }
+                },
+                "startup": "team-reveal-with-roles"
+            }
+        },
+        {
+            "role": "luvc",
+            "translation": "Luvdisc",
+            "side": "luv",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "hide": true,
+            "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
+            "actions": {
+                "initialCondition": {
+                    "clearCurse": true
+                },
+                "night": {
+                    "love": {
+                        "command": [ "dispel", "convert"],
+                        "target": "AnyButSelf",
+                        "common": "Self",
+						"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
+                        "priority": 24,
+                        "charges": 2,
+                        "limit": 2,
+                        "newRole": {"alomf": ["alomf"], "alomm": ["alomm"]},
+                        "convertmsg": "The Cupid shot a love arrow! The ~Old~ fell in love with someone!",
+						"usermsg": "~Target~ is now a ~New~!"
+                    },
+                    "protect": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+						"broadcast": "team",
+                        "priority": 10
+                    }
+                },
+                "startup": "team-reveal-with-roles"
+            }
+        },
+        {
             "role": "reli",
             "translation": "Relicanth",
+			"info": "Can kill one person during the night. Ignores all hax. Sided with itself.",
             "side": "reli",
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed. But you are only sided with yourself.",
             "actions": {
@@ -689,6 +927,7 @@
         {
             "role": "reli2",
             "translation": "Relicanth",
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc. Sided with itself.",
             "side": "reli",
             "winningSides": [
                 "luv",
@@ -740,16 +979,12 @@
         {
             "role": "lan",
             "translation": "Lanturn",
+			"info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Sided with the Chinchou Military Army.",
             "side": "chin",
-            "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can both nightkill AND daykill(Using /kill)! You also have 2 votes instead of 1. But that's about it...",
+            "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can daykill(Using /kill)! You also have 2 votes instead of 1. Your Volt Absorb ability makes you immune to your Chinchous partners attacks. But that's about it...",
             "actions": {
-                "night": {
-                    "kill": {
-                        "target": "AnyButSelf",
-                        "common": "Self",
-                        "priority": 14
-                    }
-                },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
+                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
                 "standby": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -768,10 +1003,11 @@
             "translation": "C​hinchou",
 			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
             "actions": {
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 17,
@@ -786,10 +1022,11 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!!",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
             "actions": {
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 18,
@@ -804,10 +1041,11 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!!",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
             "actions": {
                 "night": {
                     "kill": {
+						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 19,
@@ -901,26 +1139,123 @@
     ],
     "roles1": [
         "fin",
-        "insp",
+        {"insp": 0.5, "hooker": 0.5},
         "chin1",
         "fin",
-        "reli",
-        "man",
-        "chin3",
-        "mayor",
-        "maninsp",
-        "hooker",
-        "lan",
-        "rem",
-        "bg",
+        {"mayor": 0.5, "bg": 0.5},
         "tenta1",
-        "manbg",
-        "lum",
-        "chin3",
-        "oct",
-        "vigi"
+        "fin",
+        "chin1"
     ],
     "roles2": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        {"mayor": 0.5, "bg": 0.5},
+        "rem",
+        {"maninsp": 0.5,"manbg": 0.5},
+        "lan",
+        {"insp": 0.5, "hooker": 0.5},
+        {"manvote": 0.6, "man": 0.4},
+		"fin"
+    ],
+    "roles3": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        {"mayor": 0.5, "bg": 0.5},
+        "rem",
+        {"maninsp": 0.5,"manbg": 0.5},
+        "lan",
+        "insp",
+        {"manvote": 0.6, "man": 0.4},
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"fin"
+    ],
+    "roles4": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        "mayor",
+        "rem",
+        {"maninsp": 0.5,"manvote": 0.5},
+        "lan",
+        "insp",
+        "man",
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"magikarp",
+		"feebas",
+		"bg",
+		"tenta1",
+		"fin",
+		"unkill",
+		"fin"
+    ],
+    "roles5": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        "mayor",
+        "rem",
+        {"maninsp": 0.5,"manvote": 0.5},
+        "lan",
+        "insp",
+        "man",
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"magikarp",
+		"feebas",
+		"bg",
+		"tenta1",
+		"fin",
+		"unkill",
+		"reli2",
+		"luv",
+		"fin"
+    ],
+    "roles6": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        "mayor",
+        "rem",
+        {"maninsp": 0.5,"manvote": 0.5},
+        "lan",
+        "insp",
+        "man",
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"magikarp",
+		"feebas",
+		"bg",
+		"tenta1",
+		"fin",
+		"unkill",
+		"reli2",
+		"luv",
+		"lovera",
+		"lovera"
+    ],
+    "roles7": [
         "unkill",
         "insp",
         "chin1",
@@ -962,4 +1297,3 @@
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
     "killusermsg": "±Death: You were killed! Rip in peace!"
 }
-
