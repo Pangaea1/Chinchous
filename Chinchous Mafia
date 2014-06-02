@@ -29,7 +29,7 @@
         {
             "side": "fish",
             "translation": "Alliance",
-            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
+            "winmsg": "We have saved the ocean from the likes of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
         },
         {
             "side": "fishsp",
@@ -801,7 +801,7 @@
             "role": "luva",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, but this will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
                 "night": {
