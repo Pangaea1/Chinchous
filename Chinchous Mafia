@@ -2,8 +2,8 @@
     "name": "Chinchous",
     "author": ["Pangaea", "Obey To Kyubey"],
     "summary": "The original Chinchous theme, back and better than ever before! | The Chinchous have come from the Arctic to invade the Pacific Ocean! | Notes: Lanturn and Lumineon can daykill. Octillery has a revealing daykill. Tentacool and Tentacruel can poison. Alomomola has 50 votes. One of the Mantykes has -99 votes. May the best fish/octopus/stingray/etc. win! *V10.6: Gave Remoraid a voteshield of -1 so that it isn't helpless without it's team. Also gave it 0.9 votes to not stall with Lumineon. | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
-    "variables":{
-				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
+     "variables":{
+				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
 				},
 	"sides": [
         {
@@ -927,15 +927,47 @@
         {
             "role": "reli2",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc. Sided with itself.",
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
-            "actions": {
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+            "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
+			"actions": {
+                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "night": {
+                    "floatzel": {
+                        "command": "convert",
+                        "convertmsg": "Relicanth now knows the identity of Floatzel.",
+                        "target": "OnlySelf",
+                        "common": "Self",
+						"hide": true,
+                        "priority": 40,
+                        "newRole": { "reli2float": [ "reli2" ] },
+						"cancel": ["luvdisc"],
+                        "silent": false
+                    },
+                    "luvdisc": {
+                        "command": "convert",
+                        "convertmsg": "Relicanth now knows the identity of Luvdisc.",
+                        "target": "OnlySelf",
+                        "common": "Self",
+						"hide": true,
+                        "priority": 40,
+                        "newRole": { "reli2luv": [ "reli2" ] },
+						"cancel": ["floatzel"],
+                        "silent": false
+                    },
+                    "discover Floatzel's or Luvdisc's name": {
+                        "command": "dummy",
+                        "target": "OnlySelf",
+                        "common": "Self",
+                        "priority": 40
+                    },
                     "kill": {
                         "target": "AnyButSelf",
                         "common": "Self",
@@ -952,6 +984,79 @@
                 },
                 "daykill": "evade",
                 "startup": "team-reveal",
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "reli2luv",
+            "translation": "Relicanth",
+			"hide": true,
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "side": "reli",
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities",
+			"actions": {
+				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
+                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                    }
+                },
+                "daykill": "evade",
+				"startup": { "revealRole": [ "luva","luvb","luvc" ] },
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "reli2float",
+            "translation": "Relicanth",
+			"hide": true,
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "side": "reli",
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities",
+			"actions": {
+                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
+                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                    }
+                },
+                "daykill": "evade",
+				"startup": { "revealRole": [ "float" ] },
                 "avoidHax": [
                     "kill"
                 ]
@@ -979,10 +1084,11 @@
         {
             "role": "lan",
             "translation": "Lanturn",
-			"info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Sided with the Chinchou Military Army.",
+			"info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Doesn't know their partners. Sided with the Chinchou Military Army.",
             "side": "chin",
             "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can daykill(Using /kill)! You also have 2 votes instead of 1. Your Volt Absorb ability makes you immune to your Chinchous partners attacks. But that's about it...",
-            "actions": {
+            "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
+			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
                 "standby": {
@@ -992,8 +1098,9 @@
                         "killmsg": "Lanturn used Thunder! A Critical Hit! ~Target~ Fainted!"
                     }
                 },
+				"startup": { "revealRole": [ "schin" ] },
                 "vote": 2,
-                "avoidHax": [
+                "avoidStandbyHax": [
                     "kill"
                 ]
             }
@@ -1004,7 +1111,8 @@
 			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
-            "actions": {
+            "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
+			"actions": {
                 "night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
@@ -1014,7 +1122,7 @@
                         "broadcast": "role"
                     }
                 },
-                "startup": "role-reveal"
+        "startup": { "revealRole": [ "chin1", "schin" ] }
             }
         },
         {
@@ -1023,7 +1131,8 @@
 			"hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
-            "actions": {
+            "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
+			"actions": {
                 "night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
@@ -1033,7 +1142,7 @@
                         "broadcast": "role"
                     }
                 },
-                "startup": "role-reveal"
+        "startup": { "revealRole": [ "chin2", "schin" ] }
             }
         },
         {
@@ -1052,7 +1161,7 @@
                         "broadcast": "role"
                     }
                 },
-                "startup": "role-reveal"
+        "startup": { "revealRole": [ "chin3", "schin" ] }
             }
         },
         {
@@ -1224,8 +1333,8 @@
 		"tenta1",
 		"fin",
 		"unkill",
-		"reli2",
 		"luv",
+		"float",
 		"fin"
     ],
     "roles6": [
@@ -1250,43 +1359,71 @@
 		"tenta1",
 		"fin",
 		"unkill",
-		"reli2",
 		"luv",
+		"float",
 		"lovera",
-		"lovera"
+		"lovera",
+		"fin",
+		"chin2",
+		"manbg",
+		"reli2",
+		"fin",
+		"dragalge",
+		"bomb",
+		"fin",
+		"chin3",
+		"vigi",
+		"fin",
+		"oct",
+		"insp",
+		"tenta1"
     ],
     "roles7": [
-        "unkill",
-        "insp",
+        "fin",
+		"lum",
         "chin1",
         "fin",
-        "man",
-        "fin",
-        "chin3",
-        "maninsp",
-        "hooker",
-        "lan",
+        "mayor",
         "rem",
-        "bg",
-        "tenta1",
-        "manbg",
-        "lum",
-        "chin2",
-        "oct",
-        "vigi",
-        "chin1",
-        "al",
-        "tenta2",
-        "lum",
-        "manvote",
-        "reli2",
-        "fin",
-        "luv",
-        "float",
-        "fin",
-        "oct",
-        "chin2",
-        "fin"
+        "maninsp",
+        "lan",
+        "insp",
+        "man",
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"magikarp",
+		"feebas",
+		"bg",
+		"tenta1",
+		"fin",
+		"unkill",
+		"luv",
+		"float",
+		"lovera",
+		"lovera",
+		"fin",
+		"chin2",
+		"manbg",
+		"reli2",
+		"fin",
+		"dragalge",
+		"bomb",
+		"fin",
+		"schin",
+		"chin3",
+		"vigi",
+		"fin",
+		"oct",
+		"insp",
+		"tenta1",
+		"manvote",
+		"fin",
+		"mayor",
+		"chin3",
+		"fin"
     ],
     "villageCantLoseRoles": [
         "lum",
