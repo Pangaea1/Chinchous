@@ -144,7 +144,7 @@
             "translation": "Finneon",
 			"infoName": "Finneon (Lover)",
             "side": "village",
-            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3 use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
+            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
             "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
             "actions": {
 				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
@@ -738,7 +738,7 @@
             "role": "alomm",
             "translation": "Alomomola♂",
             "side": "luv",
-            "help": "A Luvdisc made You fell in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
             "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
             "actions": {
 				"convert": { "silent": true,"mode": {"ignore": ["luvb"]} }, "copy": { "silent": true,"mode": {"ignore": ["luvb"]} }, "curse": { "silent": true,"mode": {"ignore": ["luvb"]} },
@@ -770,7 +770,7 @@
             "role": "alomf",
             "translation": "Alomomola♀",
             "side": "luv",
-            "help": "A Luvdisc made You fell in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
             "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
             "actions": {
                 "night": {
