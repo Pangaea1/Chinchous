@@ -1428,8 +1428,7 @@
     "villageCantLoseRoles": [
         "lum",
         "vigi",
-        "mayor",
-		"bomb"
+        "mayor"
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
     "killusermsg": "±Death: You were killed! Rip in peace!"
