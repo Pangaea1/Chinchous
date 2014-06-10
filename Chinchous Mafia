@@ -423,7 +423,7 @@
             "translation": "Mantine",
 			"info": "Can kill one person during the night. Can defend (protect) two people during the night. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
-            "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!) Your vote counts as 2 as well. ",
+            "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!). Your vote counts as 2 as well. ",
             "actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
