@@ -1,7 +1,7 @@
 {
     "name": "Chinchous",
     "author": ["Pangaea", "Obey To Kyubey"],
-    "summary": "The original Chinchous theme, back and better than ever before! | The Chinchous have come from the Arctic to invade the Pacific Ocean! | Notes: Lanturn and Lumineon can daykill. Octillery has a revealing daykill. Tentacool and Tentacruel can poison. Alomomola has 50 votes. One of the Mantykes has -99 votes. May the best fish/octopus/stingray/etc. win! *V10.6: Gave Remoraid a voteshield of -1 so that it isn't helpless without it's team. Also gave it 0.9 votes to not stall with Lumineon. | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
+    "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control of the Pacific Ocean! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
      "variables":{
 				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
 				},
@@ -29,12 +29,12 @@
         {
             "side": "fish",
             "translation": "Alliance",
-            "winmsg": "We have saved the ocean from the likes of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
+            "winmsg": "We have saved the ocean from the likes of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill every non-Alliance member we see!"
         },
         {
             "side": "fishsp",
             "translation": "Alliance",
-            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill non-Alliance member we see!"
+            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill every non-Alliance member we see!"
         },
         {
             "side": "reli",
@@ -104,7 +104,7 @@
             "role": "bomb",
             "translation": "Finneon",
 			"infoName": "Finneon (Bomb)",
-			"info":"Sees itself as a Finneon. Receives hax on Kill and Poison. 8% to avoid all nightkills. Brings it's killer down with it when killed. Sided with Finneons.",
+			"info":"Sees itself as a Finneon. Receives hax on Kill and Poison. Brings its killer down with it when killed. Sided with Finneons.",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
             "actions": {
@@ -145,7 +145,7 @@
 			"infoName": "Finneon (Lover)",
             "side": "village",
             "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
-            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
+            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
             "actions": {
 				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
                 "onDeath": {
@@ -466,7 +466,7 @@
                     "kill": {
                         "target": "AnyButSelf",
                         "msg": "You can now kill someone with /kill [name] :",
-                        "killmsg": "Octillery uses Ice Beam! ~Target~ was frozen solid! Octillery follows it up with a SolarBeam (aren't we underwater?) for massive damage and a Fire Blast to melt ~Target~ ! But that's not it, Octillery needed overkill, and achieved that with a HYPAH BAEM! But ~Self~ was revealed as they had to recharge!"
+                        "killmsg": "Octillery uses Ice Beam! ~Target~ was frozen solid! Octillery follows it up with a SolarBeam (aren't we underwater?) for massive damage and a Fire Blast (since fire doesn't go out underwater, apparently) to melt ~Target~ ! But that's not it, Octillery needed overkill, and achieved that with a HYPAH BAEM! But ~Self~ was revealed as they had to recharge!"
                     }
                 },
                 "vote": 2
@@ -1110,7 +1110,7 @@
             "translation": "C​hinchou",
 			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "night": {
@@ -1130,7 +1130,7 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "night": {
@@ -1150,7 +1150,7 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious to not hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
             "actions": {
                 "night": {
                     "kill": {
