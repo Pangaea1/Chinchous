@@ -1,7 +1,7 @@
 {
     "name": "Chinchous",
     "author": ["Pangaea", "Obey To Kyubey"],
-    "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control of the Pacific Ocean! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
+    "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
      "variables":{
 				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
 				},
@@ -49,7 +49,7 @@
         {
             "side": "ugly",
             "translation": "Ugly Ducklings",
-            "winmsg": "They said we were the ugliest fish in the ocean...and they were probably right. But that doesn't matter now, because we, ~Players~, will rule the ocean!"
+            "winmsg": "They said we were the ugliest fish in the ocean...and they were probably right. But that doesn't matter now, because we, ~Players~, shall rule the ocean!"
         },
         {
             "side": "chin",
@@ -76,28 +76,27 @@
                         "revealPlayer": 0.05
                     },
                     "inspect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     },
                     "distract": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     },
                     "rally": {
-                        "revealTeam": 0.3,
+                        "revealRole": 0.3,
                         "revealPlayer": 0.3
                     },
                     "protect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     }
                 },
                 "kill": {
                     "mode": {
                         "evadeChance": 0.08
                     }
-                },
-                "startup": "role-reveal"
+                }
             }
         },
         {
@@ -118,20 +117,20 @@
                         "revealPlayer": 0.05
                     },
                     "inspect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     },
                     "distract": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     },
                     "rally": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.3
+                        "revealRole": 0.2,
+                        "revealPlayer": 0.2
                     },
                     "protect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     }
                 },
                 "kill": {
@@ -147,6 +146,12 @@
             "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
             "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.1,
+                        "revealPlayer": 0.1
+                    }
+                },
 				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
                 "onDeath": {
                     "convertRoles": { "lovera": "loverb" },
@@ -165,6 +170,12 @@
             "help": "Your lover has died, and all you can think about is their soft touch...and the way their fins moved while they swam...and those gorgeous never-closing eyes...therefore you have no time to think about voting so your vote counts as 0.",
             "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.1,
+                        "revealPlayer": 0.1
+                    }
+                },
 				"vote":0,
 				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
 				"teamTalk": [ "lovera"],
@@ -190,20 +201,20 @@
                         "revealPlayer": 0.05
                     },
                     "inspect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.08,
+                        "revealPlayer": 0.08
                     },
                     "distract": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.08,
+                        "revealPlayer": 0.08
                     },
                     "rally": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.3
+                        "revealRole": 0.1,
+                        "revealPlayer": 0.1
                     },
                     "protect": {
-                        "revealTeam": 0.2,
-                        "revealPlayer": 0.2
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
                     }
                 }
             }
@@ -216,6 +227,12 @@
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. But, luckily for you, the Lumineons have trained you to become the strongest Finneon ever. Somehow they trained so much that you can /kill another Pokemon during the night!",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.05,
+                        "revealPlayer": 0.05
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -233,6 +250,12 @@
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. You are even weaker than the other Finneons, as you run from battle every time. However, this means you cannot be nightkilled, as you sleep in caves, hiding from the Chinchous. But for some strange reason you're brave enough to come out during the day (I don't really know why) so you're still vulnerable to daykills.",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.05,
+                        "revealPlayer": 0.05
+                    }
+                },
                 "kill": {
                     "mode": "ignore"
                 }
@@ -246,6 +269,12 @@
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.05,
+                        "revealPlayer": 0.05
+                    }
+                },
                 "night": {
                     "inspect": {
                         "target": "AnyButSelf",
@@ -263,6 +292,12 @@
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.05,
+                        "revealPlayer": 0.05
+                    }
+                },
                 "night": {
                     "distract": {
                         "target": "AnyButSelf",
@@ -281,6 +316,12 @@
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.1,
+                        "revealPlayer": 0.1
+                    }
+                },
                 "night": {
                     "protect": {
                         "target": "AnyButSelf",
@@ -296,14 +337,15 @@
             "translation": "Lumineon",
 			"info": "A non-revealing day killer. Can rally during the night so Finneons can receive hax on the user. Vote counts as 2. Sided with the Finneons.",
             "side": "village",
-            "help": "You are a Lumineon, and you have evolved from your weak form. CHINCHOUS SUCK. You can finally fight back against the Chinchous and kill them...slowly and painfully...during the standby using /kill! Since you are a leader of the Finneons now, you can also call the Finneons with /rally [insert random player name here] for the Finneons to get hax on you! Sad thing is that you can no longer receive hax on Kill or Poison (unlike your Finneon friends.) Your vote also counts as 2.",
+            "help": "You are a Lumineon, and you have evolved from your weak form. CHINCHOUS SUCK. You can finally fight back against the Chinchous and kill them...slowly and painfully...during the standby using /kill! Since you are a leader of the Finneons now, you can also call the Finneons with /rally for the Finneons to get hax on you! Sad thing is that you can no longer receive hax on Kill or Poison (unlike your Finneon friends.) Your vote also counts as 2.",
             "actions": {
                 "night": {
                     "rally": {
                         "command": "dummy",
-                        "target": "Any",
+                        "target": "OnlySelf",
+						"limit": 1,
 						"restrict": ["rally"],
-                        "common": "Self",
+                        "common": "Role",
                         "priority": 99
                     }
                 },
@@ -435,7 +477,7 @@
                         "priority": 11
                     },
                     "defend": {
-                        "command": "protect",
+                        "command": ["protect", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Role",
                         "priority": 7,
@@ -484,7 +526,7 @@
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
-                        "command": "inspect",
+                        "command": ["inspect", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 31
@@ -506,7 +548,7 @@
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
-                        "command": "inspect",
+                        "command": ["inspect", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 31
@@ -525,7 +567,7 @@
             "role": "manbg",
             "translation": "Mantyke",
 			"info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
-			"infoName": "Mantyke (Protector)",
+			"infoName": "Mantyke (Safeguarder)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
             "actions": {
@@ -533,7 +575,7 @@
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
-                        "command": "safeguard",
+                        "command": ["safeguard", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 4,
@@ -556,7 +598,7 @@
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
-                        "command": "safeguard",
+                        "command": ["safeguard", "dummy10"],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 4,
@@ -614,7 +656,7 @@
             "translation": "Remoraid",
 			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
             "side": "fish",
-            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show at anyone who you are and try to connect your friends.",
+            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. By doing this, you can connect your friends. But be careful, as Relicanth can reveal itself, too, and his reveal message is the same as yours!",
             "actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -649,8 +691,8 @@
                 },
                 "standby": {
                     "reveal": {
-                "msg": "Type /reveal to show everyone who you are, but think twice before to do so!",
-                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                "msg": "Type /reveal to show everyone who you are, but think twice before doing so!",
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 }
             }
@@ -1431,5 +1473,6 @@
         "mayor"
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
-    "killusermsg": "±Death: You were killed! Rip in peace!"
+    "killusermsg": "±Death: You were killed! Rip in peace..."
 }
+
