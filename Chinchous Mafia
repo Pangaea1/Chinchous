@@ -362,9 +362,9 @@
         {
             "role": "tenta1",
             "translation": "Tentacool",
-			"info": "Can poison one person during the night, killing them the following night. Can hide during the night to avoid all nightkills, but can't use any other actions during that night. Can also wrap someone during the night, acting as a distract. Vote counts as -2. Sided with the Toxic Fishes.",
+			"info": "Can poison one person during the night, killing them the following night. Can hide every 2 nights to avoid all nightkills, but can't use any other actions during that night. Can also wrap someone during the night, acting as a distract. Vote counts as -2. Sided with the Toxic Fishes.",
             "side": "tenta",
-            "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
+            "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands and you can use this ability only every 2 nights. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
             "actions": {
 				"teamTalk": true,
                 "night": {
@@ -382,6 +382,7 @@
                         "command": "protect",
                         "target": "Self",
                         "common": "Role",
+						"recharge": 2,
                         "priority": 7,
                         "restrict": [
                             "wrap",
@@ -959,7 +960,7 @@
             "translation": "Relicanth",
 			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Sided with itself.",
             "side": "reli",
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed. But you are only sided with yourself.",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. But you are only sided with yourself.",
             "actions": {
                 "hax": {
                     "kill": {
@@ -1254,6 +1255,7 @@
                 "startup": "team-reveal",
                 "kill": { "mode": {"evadeChance": 0.7}},
                 "vote": 1,
+				"onDeadRoles": { "convertTo": { "gyarados": ["feebas"] }, "convertmsg": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"},
                 "onDeath": {
                     "convertRoles": {
                         "magikarp": "gyarados",
@@ -1305,6 +1307,7 @@
                 "startup": "team-reveal",
                 "daykill": { "mode": {"evadeChance": 0.7}},
                 "voteshield": -1,
+				"onDeadRoles": { "convertTo": { "milotic": ["magikarp"] }, "convertmsg": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"},
                 "onDeath": {
                     "convertRoles": {
                         "magikarp": "gyarados",
