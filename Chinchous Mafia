@@ -374,7 +374,7 @@
                         "broadcast": "team",
                         "common": "Role",
                         "priority": 2,
-                        "restrict": [
+                        "cancel": [
                             "hide"
                         ]
                     },
@@ -384,7 +384,7 @@
                         "common": "Role",
 						"recharge": 2,
                         "priority": 7,
-                        "restrict": [
+                        "cancel": [
                             "wrap",
                             "poison"
                         ]
@@ -394,7 +394,7 @@
                         "common": "Team",
                         "broadcast": "team",
                         "priority": 5,
-                        "restrict": [
+                        "cancel": [
                             "hide"
                         ]
                     }
