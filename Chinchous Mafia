@@ -501,7 +501,7 @@
                     "kill": {
 						"command": ["kill", "dummy10"],
                         "target": "AnyButSelf",
-                        "common": "Self",
+                        "common": "Role",
                         "priority": 10
                     }
                 },
@@ -518,11 +518,14 @@
         {
             "role": "maninsp",
             "translation": "Mantyke",
-			"info": "Can scout (inspect) one person during the night. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+			"info": "Can scout (inspect) one person during the night. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Inspector)",
             "side": "fish",
-            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies!",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
+				"initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "maninspup", "curseCount": 5, "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
+                    } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
@@ -567,11 +570,14 @@
         {
             "role": "manbg",
             "translation": "Mantyke",
-			"info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+			"info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Safeguarder)",
             "side": "fish",
-            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! Use this to protect your allies from poison!",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! If you will survive 5 nights you will evolve into a Mantine! Use this to protect your allies from poison!",
             "actions": {
+				"initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "manbgup", "curseCount": 5, "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
+                    } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
@@ -618,11 +624,14 @@
         {
             "role": "manvote",
             "translation": "Mantyke",
-			"info": "Vote counts as -99. If Remoraid dies, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+			"info": "Vote counts as -99. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
 			"infoName": "Mantyke (Mayor)",
             "side": "fish",
-            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way!",
+            "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
+				"initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "manvoteup", "curseCount": 5, "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
+                    } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "vote": -99
@@ -655,10 +664,13 @@
         {
             "role": "rem",
             "translation": "Remoraid",
-			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
+			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Remoraid will evolve into Octillery after 5 nights. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
             "side": "fish",
-            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. By doing this, you can connect your friends. But be careful, as Relicanth can reveal itself, too, and his reveal message is the same as yours!",
+            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. By doing this, you can connect your friends. But be careful, as Relicanth can reveal itself, too, and his reveal message is the same as yours! If you will survive 5 nights you will evolve into an Octillery!",
             "actions": {
+				"initialCondition": {
+                    "curse": { "silentCurse": true, "cursedRole": "oct", "curseCount": 5, "curseConvertMessage": "Remoraid evolved into Octillery!"
+                    } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "voteshield": -1,
