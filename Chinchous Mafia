@@ -423,7 +423,7 @@
 						"limit": 1,
 						"charges": 3,
                         "broadcast": "team",
-                        "priority": 7
+                        "priority": 10
                     }
                 },
 				"daykill": "evade",
@@ -750,10 +750,12 @@
         {
             "role": "luv",
             "translation": "Luvdisc",
+			"hide": true,
 			"info": "Can kill one person during the day (non-revealing). Can distract one person during the night. Avoids all nightkills. Sided with itself.",
             "side": "luv",
             "help": "You are a Luvdisc. HAHAHAHAHAHAHA, you got the weakest role in this theme(Blame the GameBot). But actually, you are here to show your true capabilities as a Luvdisc. You cannot be nightkilled due to the killer thinking that you are worthless. You can /distract 1 person during the night with your fail. Plus, you can /kill 1 person during the standby(By making them laugh to death)! But you are all alone...I wish you good luck (you'll need it).",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "distract": {
                         "target": "AnyButSelf",
@@ -780,9 +782,10 @@
             "role": "alomm",
             "translation": "Alomomola♂",
             "side": "luv",
-            "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
 				"convert": { "silent": true,"mode": {"ignore": ["luvb"]} }, "copy": { "silent": true,"mode": {"ignore": ["luvb"]} }, "curse": { "silent": true,"mode": {"ignore": ["luvb"]} },
                 "night": {
                     "kill": {
@@ -812,9 +815,10 @@
             "role": "alomf",
             "translation": "Alomomola♀",
             "side": "luv",
-            "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners]",
+            "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "distract": {
                         "target": "AnyButTeam",
@@ -843,9 +847,10 @@
             "role": "luva",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, but this will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, but this will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "love": {
                         "command": [ "curse", "convert", "copy"],
@@ -876,10 +881,11 @@
             "role": "luvb",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "initialCondition": {
                     "curse": {
                         "cursedRole": "luva",
@@ -917,10 +923,11 @@
             "role": "luvc",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "initialCondition": {
                     "clearCurse": true
                 },
@@ -950,10 +957,32 @@
         {
             "role": "reli",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Sided with itself.",
+			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Sided with itself.",
             "side": "reli",
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed. But you are only sided with yourself.",
             "actions": {
+                "hax": {
+                    "kill": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "poison": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "inspect": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    },
+                    "distract": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    },
+                    "protect": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1042,8 +1071,9 @@
                 "float"
             ],
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities",
+			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
 			"actions": {
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
 				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "night": {
@@ -1072,15 +1102,16 @@
             "role": "reli2float",
             "translation": "Relicanth",
 			"hide": true,
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+			"info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities",
+			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
 			"actions": {
+				"teamTalk": [ "float"],
                 "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
                 "night": {
                     "kill": {
@@ -1152,7 +1183,7 @@
             "translation": "C​hinchou",
 			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "night": {
@@ -1164,7 +1195,8 @@
                         "broadcast": "role"
                     }
                 },
-        "startup": { "revealRole": [ "chin1", "schin" ] }
+				"teamTalk": [ "chin1"],
+				"startup": { "revealRole": [ "chin1", "schin" ] }
             }
         },
         {
@@ -1172,7 +1204,7 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "night": {
@@ -1184,7 +1216,8 @@
                         "broadcast": "role"
                     }
                 },
-        "startup": { "revealRole": [ "chin2", "schin" ] }
+				"teamTalk": [ "chin2"],
+				"startup": { "revealRole": [ "chin2", "schin" ] }
             }
         },
         {
@@ -1192,7 +1225,7 @@
             "translation": "C​hinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "actions": {
                 "night": {
                     "kill": {
@@ -1203,16 +1236,18 @@
                         "broadcast": "role"
                     }
                 },
-        "startup": { "revealRole": [ "chin3", "schin" ] }
+				"teamTalk": [ "chin3"],
+				"startup": { "revealRole": [ "chin3", "schin" ] }
             }
         },
         {
             "role": "magikarp",
             "translation": "Magikarp",
             "side": "ugly",
-            "help": "The other fishes thinks that you are weak and useless, so you and Feebas decided to show them that they are wrong. You evade 70% of the time any kill during the night. If Feebas dies or after 4 nights you will evolve into a Furious Gyarados!",
+            "help": "The other fishes thinks that you are weak and useless, so you and Feebas decided to show them that they are wrong. You evade 70% of the time any kill during the night. If Feebas dies or after 4 nights you will evolve into a Furious Gyarados! Use /tt to talk with your partnes.",
             "info": "Has 70% chance to evade night-kills. If Feebas dies or after 4 nights Magikarp will evolve into a Gyarados. Sided with the Ugly Ducklings.",
 			"actions": {
+				"teamTalk": true,
                 "initialCondition": {
                     "curse": { "silentCurse": true, "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
                     } },
@@ -1232,9 +1267,13 @@
             "role": "gyarados",
             "translation": "Gyarados",
             "side": "ugly",
-            "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last!",
+            "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade night-kills. Can poison 3 targets every night which will die the next night. Sided with the Ugly Ducklings.",
 			"actions": {
+				"teamTalk": true,
+                "initialCondition": {
+                    "clearCurse": true
+                },
                 "startup": "team-reveal",
                 "kill": { "mode": "ignore"},
                 "night": {
@@ -1256,9 +1295,10 @@
             "role": "feebas",
             "translation": "Feebas",
             "side": "ugly",
-            "help": "The other fishes thinks that you are the most ugly thing that they ever seen, so you and Magikarp decided to show them that they are wrong. You evade 70% of the time any kill during the night. You have a -1 vote-shield. If Magikarp dies or after 4 nights you will evolve into a Beautiful Milotic!",
+            "help": "The other fishes thinks that you are the most ugly thing that they ever seen, so you and Magikarp decided to show them that they are wrong. You evade 70% of the time any kill during the night. You have a -1 vote-shield. If Magikarp dies or after 4 nights you will evolve into a Beautiful Milotic! Use /tt to talk with your partners",
             "info": "Has 70% chance to evade day-kills. Has a vote-shield equal to -1. If Magikarp dies or after 4 nights Feebas will evolve into a Milotic. Sided with the Ugly Ducklings.",
 			"actions": {
+				"teamTalk": true,
                 "initialCondition": {
                     "curse": { "silentCurse": true, "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"
                     } },
@@ -1278,9 +1318,13 @@
             "role": "milotic",
             "translation": "Milotic",
             "side": "ugly",
-            "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last!",
+            "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
 			"actions": {
+				"teamTalk": true,
+                "initialCondition": {
+                    "clearCurse": true
+                },
                 "startup": "team-reveal",
                 "daykill": "evade",
 				"voteshield": -999,
@@ -1305,10 +1349,10 @@
         "fin",
         {"mayor": 0.5, "bg": 0.5},
         "rem",
-        {"maninsp": 0.5,"manbg": 0.5},
+        {"maninsp": 0.6,"manvote": 0.4},
         "lan",
         {"insp": 0.5, "hooker": 0.5},
-        {"manvote": 0.6, "man": 0.4},
+        "man",
 		"fin"
     ],
     "roles3": [
@@ -1318,39 +1362,29 @@
         "fin",
         {"mayor": 0.5, "bg": 0.5},
         "rem",
-        {"maninsp": 0.5,"manbg": 0.5},
+        {"maninsp": 0.6,"manvote": 0.4},
         "lan",
         "insp",
-        {"manvote": 0.6, "man": 0.4},
+        "man",
 		"fin",
-		"hooker",
-		"tenta2",
-		"chin2",
-		"fin",
-		"fin"
+		"hooker"
     ],
     "roles4": [
         "fin",
 		"lum",
         "chin1",
         "fin",
-        "mayor",
+        {"mayor": 0.5, "bg": 0.5},
         "rem",
-        {"maninsp": 0.5,"manvote": 0.5},
+        {"maninsp": 0.6,"manbg": 0.4},
         "lan",
         "insp",
-        "man",
-		"fin",
+        {"manvote": 0.6,"man": 0.4},
 		"hooker",
+		"reli",
 		"tenta2",
 		"chin2",
 		"fin",
-		"magikarp",
-		"feebas",
-		"bg",
-		"tenta1",
-		"fin",
-		"unkill",
 		"fin"
     ],
     "roles5": [
@@ -1364,7 +1398,7 @@
         "lan",
         "insp",
         "man",
-		"fin",
+		"reli",
 		"hooker",
 		"tenta2",
 		"chin2",
@@ -1375,8 +1409,6 @@
 		"tenta1",
 		"fin",
 		"unkill",
-		"luv",
-		"float",
 		"fin"
     ],
     "roles6": [
@@ -1401,7 +1433,33 @@
 		"tenta1",
 		"fin",
 		"unkill",
-		"luv",
+		"luva",
+		"float",
+		"fin"
+    ],
+    "roles7": [
+        "fin",
+		"lum",
+        "chin1",
+        "fin",
+        "mayor",
+        "rem",
+        {"maninsp": 0.5,"manvote": 0.5},
+        "lan",
+        "insp",
+        "man",
+		"fin",
+		"hooker",
+		"tenta2",
+		"chin2",
+		"fin",
+		"magikarp",
+		"feebas",
+		"bg",
+		"tenta1",
+		"fin",
+		"unkill",
+		"luva",
 		"float",
 		"lovera",
 		"lovera",
@@ -1420,7 +1478,7 @@
 		"insp",
 		"tenta1"
     ],
-    "roles7": [
+    "roles8": [
         "fin",
 		"lum",
         "chin1",
@@ -1442,7 +1500,7 @@
 		"tenta1",
 		"fin",
 		"unkill",
-		"luv",
+		"luva",
 		"float",
 		"lovera",
 		"lovera",
@@ -1473,6 +1531,11 @@
         "mayor"
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
-    "killusermsg": "±Death: You were killed! Rip in peace..."
+    "killusermsg": "±Death: You were killed! Rip in peace...",
+    "changelog": {
+        "June 2, 2014": "Changelog added. Theme re-made and fixed for server.",
+        "June 17, 2014": "Test Period Started.",
+        "June 19, 2014": "Added TeamTalk and fixed some errors."
+		}
 }
 
