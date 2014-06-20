@@ -508,7 +508,7 @@
                 "standby": {
                     "kill": {
                         "target": "AnyButSelf",
-                        "msg": "You can now kill someone with /kill [name] :",
+                        "msg": "You can now kill someone with /kill [name], but be careful as you WILL be revealed! :",
                         "killmsg": "Octillery uses Ice Beam! ~Target~ was frozen solid! Octillery follows it up with a SolarBeam (aren't we underwater?) for massive damage and a Fire Blast (since fire doesn't go out underwater, apparently) to melt ~Target~ ! But that's not it, Octillery needed overkill, and achieved that with a HYPAH BAEM! But ~Self~ was revealed as they had to recharge!"
                     }
                 },
