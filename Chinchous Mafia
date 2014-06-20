@@ -524,7 +524,7 @@
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
 				"initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "maninspup", "curseCount": 5, "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
+                    "curse": { "cursedRole": "maninspup", "curseCount": 5, "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
                     } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -576,7 +576,7 @@
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! If you will survive 5 nights you will evolve into a Mantine! Use this to protect your allies from poison!",
             "actions": {
 				"initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "manbgup", "curseCount": 5, "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
+                    "curse": { "cursedRole": "manbgup", "curseCount": 5, "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
                     } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -630,7 +630,7 @@
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
 				"initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "manvoteup", "curseCount": 5, "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
+                    "curse": { "cursedRole": "manvoteup", "curseCount": 5, "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
                     } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -669,7 +669,7 @@
             "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. By doing this, you can connect your friends. But be careful, as Relicanth can reveal itself, too, and his reveal message is the same as yours! If you will survive 5 nights you will evolve into an Octillery!",
             "actions": {
 				"initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "oct", "curseCount": 5, "curseConvertMessage": "Remoraid evolved into Octillery!"
+                    "curse": { "cursedRole": "oct", "curseCount": 5, "curseConvertMessage": "Remoraid evolved into Octillery!"
                     } },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -1262,7 +1262,7 @@
 			"actions": {
 				"teamTalk": true,
                 "initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
+                    "curse": { "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
                     } },
                 "startup": "team-reveal",
                 "kill": { "mode": {"evadeChance": 0.7}},
@@ -1314,7 +1314,7 @@
 			"actions": {
 				"teamTalk": true,
                 "initialCondition": {
-                    "curse": { "silentCurse": true, "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"
+                    "curse": { "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"
                     } },
                 "startup": "team-reveal",
                 "daykill": { "mode": {"evadeChance": 0.7}},
@@ -1545,8 +1545,8 @@
         "vigi",
         "mayor"
     ],
-    "killmsg": "±Death: ~Player~ (~Role~) drowned! Such rip...",
-    "killusermsg": "±Death: You were killed! Rip in peace...",
+    "killmsg": "±Death: ~Player~ (~Role~) drowned!",
+    "killusermsg": "±Death: You were killed! Rest in peace...",
     "changelog": {
         "June 2, 2014": "Changelog added. Theme re-made and fixed for server.",
         "June 17, 2014": "Test Period Started.",
