@@ -287,7 +287,7 @@
         {
             "role": "hooker",
             "translation": "Finneon",
-			"info": "A basic villager with a chance of hax. Sided with the Finneons.",
+			"info": "Can distract 1 target every night. Has a low chance to hax Lumineon's /rally command. Sided with the Finneons.",
 			"infoName": "Finneon (Distractor)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
@@ -463,7 +463,8 @@
         },
         {
             "role": "man",
-            "translation": "Mantine",
+            "translation": "Mantine (Leader)",
+			"infoName": "Mantine (Leader)",
 			"info": "Can kill one person during the night. Can defend (protect) two people during the night. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
             "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!). Your vote counts as 2 as well. ",
@@ -542,14 +543,16 @@
         },
         {
             "role": "maninspup",
-            "translation": "Mantine",
-			"hide": true,
+            "translation": "Mantine (Inspector)",
+            "players": "Convert only",
             "winningSides": [
                 "fish"
             ],
             "side": "fishsp",
+			"info": "Mantyke (Inspector) when evolved. Can Inspect another player every night. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -597,14 +600,16 @@
         },
         {
             "role": "manbgup",
-            "translation": "Mantine",
-			"hide": true,
+            "translation": "Mantine (Safeguarder)",
+            "players": "Convert only",
             "winningSides": [
                 "fish"
             ],
             "side": "fishsp",
+			"info": "Mantyke (Safeguarder) when evolved. Can use Safeguard every night on another player. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -645,14 +650,16 @@
         },
         {
             "role": "manvoteup",
-            "translation": "Mantine",
-			"hide": true,
+            "translation": "Mantine (Mayor)",
+            "players": "Convert only",
             "winningSides": [
                 "fish"
             ],
             "side": "fishsp",
+			"info": "Mantyke (Mayor) when evolved. Vote counts as -99. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
+                "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
@@ -667,6 +674,14 @@
                     }
                 }
             }
+        },
+        {
+            "role": "mantine",
+            "translation": "Mantine",
+			"hide": true,
+            "side": "fish",
+            "help": "This is a Dummy role.",
+            "actions": { }
         },
         {
             "role": "rem",
@@ -802,6 +817,7 @@
         {
             "role": "alomm",
             "translation": "Alomomola♂",
+            "players": "When someone is converted by Luvdisc!",
             "side": "luv",
             "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
@@ -835,6 +851,7 @@
         {
             "role": "alomf",
             "translation": "Alomomola♀",
+            "players": "When someone is converted by Luvdisc!",
             "side": "luv",
             "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
@@ -1288,6 +1305,7 @@
         {
             "role": "gyarados",
             "translation": "Gyarados",
+            "players": "When Magikarp evolves.",
             "side": "ugly",
             "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade night-kills. Can poison 3 targets every night which will die the next night. Sided with the Ugly Ducklings.",
@@ -1340,14 +1358,13 @@
         {
             "role": "milotic",
             "translation": "Milotic",
+            "players": "When Feebas evolves.",
             "side": "ugly",
             "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
 			"actions": {
 				"teamTalk": true,
-                "initialCondition": {
-                    "clearCurse": true
-                },
+                "initialCondition": { "clearCurse": true },
                 "startup": "team-reveal",
                 "daykill": "evade",
 				"voteshield": -999,
