@@ -19,7 +19,7 @@
         {
             "side": "luv",
             "translation": "Luvdisc",
-            "winmsg": "Lol there's no way Luvdisc is going to wi---wait, they won?! How is this even possible? The weakest Pokemon in existence, ~Players~, defeated everyone else. Excuse me while I go rethink my entire life."
+            "winmsg": "Lol there's no way Luvdisc is going to wi---wait, they won?! How is this even possible? One of the weakest Pokemon in existence, ~Players~, defeated everyone else. Excuse me while I go rethink my entire life."
         },
         {
             "side": "tenta",
@@ -407,7 +407,7 @@
             "role": "dragalge",
             "translation": "Dragalge",
             "side": "tenta",
-            "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Tentacool's since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
+            "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Toxic Fishes since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
             "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Toxic Fishes.",
 			"actions": {
 				"teamTalk": true,
@@ -436,7 +436,7 @@
             "translation": "Tentacruel",
 			"info": "Can poison one person during the night, killing them the following night. Can wrap someone during the night, acting as a distract. Avoids all nightkills. Vote counts as 2. Sided with the Toxic Fishes.",
             "side": "tenta",
-            "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can also do everything that Tentacool can do. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
+            "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
             "actions": {
 				"teamTalk": true,
                 "night": {
@@ -550,7 +550,7 @@
             ],
             "side": "fishsp",
 			"info": "Mantyke (Inspector) when evolved. Can Inspect another player every night. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
-            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
@@ -607,7 +607,7 @@
             ],
             "side": "fishsp",
 			"info": "Mantyke (Safeguarder) when evolved. Can use Safeguard every night on another player. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
-            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
@@ -657,7 +657,7 @@
             ],
             "side": "fishsp",
 			"info": "Mantyke (Mayor) when evolved. Vote counts as -99. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
-            "help": "You are a Mantine! Your best friend, Remoraid, has died, and you killed him as his dying wish. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
@@ -728,7 +728,7 @@
                 "standby": {
                     "reveal": {
                 "msg": "Type /reveal to show everyone who you are, but think twice before doing so!",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
                     }
                 }
             }
@@ -1088,7 +1088,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1126,7 +1126,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1163,7 +1163,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~ the Remoraid suddenly finds themselves in the center of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1298,7 +1298,7 @@
                         "magikarp": "gyarados",
                         "feebas": "milotic"
                     },
-                    "convertmsg": "±Game: ~Self~'s dying wish was for Feebas to level up, and thus allowed them to make the final blow. ~Old~ evolved and became ~New~!"
+                    "convertmsg": "±Game: ~Self~'s dying wish was for Feebas to evolve, and thus allowed them to make the final blow. ~Old~ evolved and became ~New~!"
                 }
             }
         },
@@ -1340,12 +1340,12 @@
 			"actions": {
 				"teamTalk": true,
                 "initialCondition": {
-                    "curse": { "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"
+                    "curse": { "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"
                     } },
                 "startup": "team-reveal",
                 "daykill": { "mode": {"evadeChance": 0.7}},
                 "voteshield": -1,
-				"onDeadRoles": { "convertTo": { "milotic": ["magikarp"] }, "convertmsg": "The ugly Feebas levelled up and evolved into a Beautiful Milotic ready to get their revenge!"},
+				"onDeadRoles": { "convertTo": { "milotic": ["magikarp"] }, "convertmsg": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"},
                 "onDeath": {
                     "convertRoles": {
                         "magikarp": "gyarados",
