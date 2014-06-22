@@ -544,7 +544,7 @@
         {
             "role": "maninspup",
             "translation": "Mantine (Inspector)",
-            "players": "Convert only",
+            "players": "When Mantyke (Inspector) evolves.",
             "winningSides": [
                 "fish"
             ],
@@ -601,7 +601,7 @@
         {
             "role": "manbgup",
             "translation": "Mantine (Safeguarder)",
-            "players": "Convert only",
+            "players": "When Mantyke (Safeguarder) evolves.",
             "winningSides": [
                 "fish"
             ],
@@ -651,7 +651,7 @@
         {
             "role": "manvoteup",
             "translation": "Mantine (Mayor)",
-            "players": "Convert only",
+            "players": "When Mantyke (Mayor) evolves.",
             "winningSides": [
                 "fish"
             ],
