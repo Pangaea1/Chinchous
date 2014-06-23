@@ -1177,6 +1177,15 @@
             "role": "schin",
             "translation": "Shiny C​hinchou",
             "side": "shiny",
+			"winIfDeadRoles": [
+                "bomb", "vigi", "lum",
+                "float",
+                "alomm", "luva", "luvb", "luvc",
+                "tenta1", "tenta2", "dragalge",
+                "man", "oct", "maninsp", "manbg", "manvote", "maninspup", "manbgup", "manvoteup", "rem",
+                "reli", "reli2", "reli2luv", "reli2float",
+				"magikarp", "gyarados", "feebas", "milotic"
+							  ],
             "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills/daykills from them! ",
             "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills/daykills from Chinchous team. Sided with itself.",
 			"actions": {
@@ -1360,6 +1369,16 @@
             "translation": "Milotic",
             "players": "When Feebas evolves.",
             "side": "ugly",
+			"winIfDeadRoles": [
+				"vigi",
+                "float",
+                "alomm", "luva", "luvb", "luvc",
+                "tenta1", "tenta2", "dragalge",
+                "man", "oct", "maninsp", "manbg", "manvote", "maninspup", "manbgup", "manvoteup", "rem",
+                "reli", "reli2", "reli2luv", "reli2float",
+				"chin1", "chin2", "chin3",
+				"schin"
+							  ],
             "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
 			"actions": {
