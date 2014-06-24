@@ -1175,7 +1175,7 @@
         },
         {
             "role": "schin",
-            "translation": "Shiny Sbirulino",
+            "translation": "Shiny Chinchou",
             "side": "shiny",
 			"winIfDeadRoles": [
                 "bomb", "vigi", "lum",
@@ -1227,7 +1227,7 @@
         },
         {
             "role": "chin1",
-            "translation": "Sbirulino",
+            "translation": "Chinchou",
 			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
@@ -1248,7 +1248,7 @@
         },
         {
             "role": "chin2",
-            "translation": "Sbirulino",
+            "translation": "Chinchou",
 			"hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
@@ -1269,7 +1269,7 @@
         },
         {
             "role": "chin3",
-            "translation": "Sbirulino",
+            "translation": "Chinchou",
 			"hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
