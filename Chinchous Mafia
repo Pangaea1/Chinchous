@@ -1182,15 +1182,16 @@
                 "float",
                 "alomm", "luva", "luvb", "luvc",
                 "tenta1", "tenta2", "dragalge",
+				"lan",
                 "man", "oct", "maninsp", "manbg", "manvote", "maninspup", "manbgup", "manvoteup", "rem",
                 "reli", "reli2", "reli2luv", "reli2float",
 				"magikarp", "gyarados", "feebas", "milotic"
 							  ],
-            "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills/daykills from them! ",
-            "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills/daykills from Chinchous team. Sided with itself.",
+            "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target or Milotic counter-vote you). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills from them!",
+            "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills from Chinchous team. Sided with itself.",
 			"actions": {
 				"vote": 99,
-                "kill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } }, "daykill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } },
+                "kill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1207,18 +1208,17 @@
 			"info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Doesn't know their partners. Sided with the Chinchou Military Army.",
             "side": "chin",
             "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can daykill(Using /kill)! You also have 2 votes instead of 1. Your Volt Absorb ability makes you immune to your Chinchous partners attacks. But that's about it...",
-            "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "standby": {
+                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+				"standby": {
                     "kill": {
                         "target": "AnyButSelf",
                         "msg": "You can now kill someone with /kill [name] :",
                         "killmsg": "Lanturn used Thunder! A Critical Hit! ~Target~ Fainted!"
                     }
                 },
-				"startup": { "revealRole": [ "schin" ] },
                 "vote": 2,
                 "avoidStandbyHax": [
                     "kill"
@@ -1233,7 +1233,10 @@
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
-                "night": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
+                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
+                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
@@ -1254,7 +1257,10 @@
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
-                "night": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
+                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
+                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
@@ -1274,7 +1280,10 @@
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "actions": {
-                "night": {
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
+                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
+                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
                         "target": "AnyButRole",
