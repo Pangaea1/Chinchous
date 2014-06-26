@@ -1228,9 +1228,9 @@
         {
             "role": "chin1",
             "translation": "Chinchou",
-			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Sided with Chinchou Military Army",
+			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Immune to their partners' attacks. Sided with Chinchou Military Army",
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
@@ -1254,7 +1254,7 @@
             "translation": "Chinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
@@ -1278,7 +1278,7 @@
             "translation": "Chinchou",
 			"hide": true,
             "side": "chin",
-            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Use /tt to talk with any team-mate that you know from the begin of the game.",
+            "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
