@@ -1,6 +1,6 @@
 {
     "name": "Chinchous",
-    "author": ["Pangaea"],
+    "author": ["Pangaea", "Obey To Kyubey"],
     "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
      "variables":{
 				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
@@ -366,6 +366,7 @@
             "side": "tenta",
             "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands and you can use this ability only every 2 nights. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "night": {
                     "wrap": {
@@ -410,6 +411,7 @@
             "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Toxic Fishes since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
             "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Toxic Fishes.",
 			"actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "night": {
                     "poison": {
@@ -438,6 +440,7 @@
             "side": "tenta",
             "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "night": {
                     "wrap": {
@@ -657,7 +660,7 @@
             ],
             "side": "fishsp",
 			"info": "Mantyke (Mayor) when evolved. Vote counts as -99. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
-            "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
+            "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
@@ -688,7 +691,7 @@
             "translation": "Remoraid",
 			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Remoraid will evolve into Octillery after 5 nights or when there are no more Mantykes around. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
             "side": "fish",
-            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! They asked you to wear it because they thought you would not be an important part of the battle and they just used you as an experiment (poor you)! But it actually works! So don't betray the Alliance! The suit also gives you a voteshield of -1, meaning that you can ignore a vote directed onto you. However, the suit does only give you 0.9 votes, but that's not a big deal, right? You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. By doing this, you can connect your friends. But be careful, as Relicanth can reveal itself, too, and his reveal message is the same as yours! If you will survive 5 nights or if there are no Mantykes you will evolve into an Octillery!",
+            "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! The suit also gives you a voteshield of -1. The suit does only give you 0.9 votes. You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. But be careful, as Relicanth can reveal itself with the same message as yours. If you survive 5 nights or if there are no Mantykes you will evolve into an Octillery!",
             "actions": {
 				"initialCondition": {
                     "curse": { "cursedRole": "oct", "curseCount": 5, "curseConvertMessage": "Remoraid evolved into Octillery!"
@@ -791,6 +794,7 @@
             "side": "luv",
             "help": "You are a Luvdisc. HAHAHAHAHAHAHA, you got the weakest role in this theme(Blame the GameBot). But actually, you are here to show your true capabilities as a Luvdisc. You cannot be nightkilled due to the killer thinking that you are worthless. You can /distract 1 person during the night with your fail. Plus, you can /kill 1 person during the standby(By making them laugh to death)! But you are all alone...I wish you good luck (you'll need it).",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "distract": {
@@ -822,6 +826,7 @@
             "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
 				"convert": { "silent": true,"mode": {"ignore": ["luvb"]} }, "copy": { "silent": true,"mode": {"ignore": ["luvb"]} }, "curse": { "silent": true,"mode": {"ignore": ["luvb"]} },
                 "night": {
@@ -856,6 +861,7 @@
             "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "distract": {
@@ -885,9 +891,10 @@
             "role": "luva",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, but this will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "night": {
                     "love": {
@@ -919,10 +926,11 @@
             "role": "luvb",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
+            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "initialCondition": {
                     "curse": {
@@ -961,10 +969,11 @@
             "role": "luvc",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two target to recruit them as two Alomomolas lovers and your helpers, this action will fail if at least one of them cannot be converted or died before to be transformed. One of the two will be able to kill during the night and the other will be able to distract, but if one of them die, both die (but you get a chance to form a new couple). You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
+            "help": "For now your /love ability is useless because you have already 2 partners but if they die you will be able to use it again to search other two Alomomolas. You can protect one of them by using /protect [name] during the night. Use /tt to talk with your allies.",
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
+				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
                 "initialCondition": {
                     "clearCurse": true
@@ -995,10 +1004,15 @@
         {
             "role": "reli",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Sided with itself.",
+			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. But you are only sided with yourself.",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+				"lynch": {
+                    "convertTo": "relib",
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                },
                 "hax": {
                     "kill": {
                         "revealTeam": 0.1,
@@ -1034,17 +1048,66 @@
             }
         },
         {
+            "role": "relib",
+            "translation": "Relicanth",
+			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+            "side": "reli",
+            "hide": true,
+			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
+            "actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+                "hax": {
+                    "kill": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "poison": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.05
+                    },
+                    "inspect": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    },
+                    "distract": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    },
+                    "protect": {
+                        "revealTeam": 0.1,
+                        "revealPlayer": 0.1
+                    }
+                },
+                "night": {
+                    "kill": {
+						"hide": true,
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
             "role": "reli2",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
             "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
 			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+				"lynch": {
+                    "convertTo": "reli2b",
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                },
                 "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
                 "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
@@ -1099,6 +1162,75 @@
             }
         },
         {
+            "role": "reli2b",
+            "translation": "Relicanth",
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that get lynched and is immune to distract. Sided with Relicanth.",
+            "side": "reli",
+			"hide": true,
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You survived your lynch but be careful, because there will not be a second time. After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) If you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
+            "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
+			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "night": {
+                    "floatzel": {
+                        "command": "convert",
+                        "convertmsg": "Relicanth now knows the identity of Floatzel.",
+                        "target": "OnlySelf",
+                        "common": "Self",
+						"hide": true,
+                        "priority": 40,
+                        "newRole": { "reli2float": [ "reli2" ] },
+						"cancel": ["luvdisc"],
+                        "silent": false
+                    },
+                    "luvdisc": {
+                        "command": "convert",
+                        "convertmsg": "Relicanth now knows the identity of Luvdisc.",
+                        "target": "OnlySelf",
+                        "common": "Self",
+						"hide": true,
+                        "priority": 40,
+                        "newRole": { "reli2luv": [ "reli2" ] },
+						"cancel": ["floatzel"],
+                        "silent": false
+                    },
+                    "discover Floatzel's or Luvdisc's name": {
+						"hide": true,
+                        "command": "dummy",
+                        "target": "OnlySelf",
+                        "common": "Self",
+                        "priority": 40
+                    },
+                    "kill": {
+						"hide": true,
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                    }
+                },
+                "daykill": "evade",
+                "startup": "team-reveal",
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
             "role": "reli2luv",
             "translation": "Relicanth",
 			"hide": true,
@@ -1108,9 +1240,53 @@
                 "luv",
                 "float"
             ],
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
 			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
 			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+				"lynch": {
+                    "convertTo": "reli2luvb",
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                },
+				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                    }
+                },
+                "daykill": "evade",
+				"startup": { "revealRole": [ "luva","luvb","luvc" ] },
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "reli2luvb",
+            "translation": "Relicanth",
+			"hide": true,
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "side": "reli",
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You survived your lynch but be careful, because there will not be a second time! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You ignore anyone that distracts you. You also evade daykills like Remoraid can.",
+			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
+			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
 				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
@@ -1146,9 +1322,52 @@
                 "luv",
                 "float"
             ],
-            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You also evade daykills like Remoraid can.",
+            "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
 			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
 			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
+				"lynch": {
+                    "convertTo": "reli2floatb",
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                },
+				"teamTalk": [ "float"],
+                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "night": {
+                    "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 9
+                    }
+                },
+                "standby": {
+                    "lie": {
+						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "command": "expose",
+                        "target": "Self",
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                    }
+                },
+                "daykill": "evade",
+				"startup": { "revealRole": [ "float" ] },
+                "avoidHax": [
+                    "kill"
+                ]
+            }
+        },
+        {
+            "role": "reli2floatb",
+            "translation": "Relicanth",
+			"hide": true,
+			"info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "side": "reli",
+            "winningSides": [
+                "luv",
+                "float"
+            ],
+            "help": "You survived your lynch but be careful, because there will not be a second time! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will ignore anything that tries to distract you. You also evade daykills like Remoraid can.",
+			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
+			"actions": {
+				"distract": { "silent": true, "mode": "ignore" },
 				"teamTalk": [ "float"],
                 "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
                 "night": {
@@ -1303,6 +1522,7 @@
             "help": "The other fishes thinks that you are weak and useless, so you and Feebas decided to show them that they are wrong. You evade 70% of the time any kill during the night. If Feebas dies or after 4 nights you will evolve into a Furious Gyarados! Use /tt to talk with your partnes.",
             "info": "Has 70% chance to evade night-kills. If Feebas dies or after 4 nights Magikarp will evolve into a Gyarados. Sided with the Ugly Ducklings.",
 			"actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "initialCondition": {
                     "curse": { "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
@@ -1328,6 +1548,7 @@
             "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade night-kills. Can poison 3 targets every night which will die the next night. Sided with the Ugly Ducklings.",
 			"actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "initialCondition": {
                     "clearCurse": true
@@ -1356,6 +1577,7 @@
             "help": "The other fishes thinks that you are the most ugly thing that they ever seen, so you and Magikarp decided to show them that they are wrong. You evade 70% of the time any kill during the night. You have a -1 vote-shield. If Magikarp dies or after 4 nights you will evolve into a Beautiful Milotic! Use /tt to talk with your partners",
             "info": "Has 70% chance to evade day-kills. Has a vote-shield equal to -1. If Magikarp dies or after 4 nights Feebas will evolve into a Milotic. Sided with the Ugly Ducklings.",
 			"actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "initialCondition": {
                     "curse": { "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"
@@ -1391,6 +1613,7 @@
             "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
 			"actions": {
+				"preventTeamvote": true,
 				"teamTalk": true,
                 "initialCondition": { "clearCurse": true },
                 "startup": "team-reveal",
@@ -1600,11 +1823,21 @@
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned!",
     "killusermsg": "±Death: You were killed! Rest in peace...",
+	"tips": {
+		"Village 1": "Due to the amount of enemy daykills, neither Lumineon nor the Finneon Inspector can safely claim.",
+		"Village 2": "If there are no more Mantykes and Remoraid has been revealed, vote him off.",
+		"Chinchous 1": "If you find one of your allies, PM THEM AS SOON AS POSSIBLE. This is your only real form of connecting.",
+		"Chinchous 2": "(If Shiny Chinchou is in play) If you find Lanturn, tell him who the Shiny Chinchou is as Lanturn can kill him.",
+		"Alliance 1": "In large games, please be aware that Relicanth can reveal himself with the exact same reveal message as Remoraid. Be cautious.",
+		"Alliance 2": "Octillery should only day-kill if he is certain to win after killing someone or he has been revealed.",
+		"Alliance 3": "Connection is crucial for you. If you find one of your partners, PM THEM AS SOON AS POSSIBLE. If Remoraid reveals himself, make sure you PM him so you can be connected with your team."
+	},
     "changelog": {
         "June 2, 2014": "Changelog added. Theme re-made and fixed for server.",
         "June 17, 2014": "Test Period Started.",
         "June 19, 2014": "Added TeamTalk and fixed some errors.",
-        "June 20, 2014": "The Members of the Alliance team now evolves after 5 nights or when Remoraid or all the Mantykes dies. No more Rip messages, it looks like it was annoying for some people."
+        "June 20, 2014": "The Members of the Alliance team now evolves after 5 nights or when Remoraid or all the Mantykes dies. No more Rip messages, it looks like it was annoying for some people.",
+		"July 2, 2014": "Added /tips and preventTeamVotes for Toxic Fishes and Ugly Ducklings, buffed Relicanth a little: now they will survive the first time that they get lynched and will ignore any attempt to distract him."
 		}
 }
 
