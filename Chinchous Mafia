@@ -904,14 +904,15 @@
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-						"usermsg": "",
+			"usermsg": "",
                         "newRole": "alomm",
-						"curseCount": 1,
-						"cursedRole": "variable:luvdisc curse",
-						"convertfailmsg": "",
-						"copyfailmsg": "",
-						"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
-						"copyAs": "luvb"
+			"curseCount": 1,
+			"cursedRole": "variable:luvdisc curse",
+			"curseConvertMessage": "",
+			"convertfailmsg": "",
+			"copyfailmsg": "",
+			"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
+			"copyAs": "luvb"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -947,14 +948,15 @@
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-						"usermsg": "",
+			"usermsg": "",
                         "newRole": "alomf",
-						"curseCount": 1,
-						"cursedRole": "variable:luvdisc curse",
-						"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
-						"copyfailmsg": "",
-						"silentCurse": true, "silent": true, "silentConvert": true,
-						"copyAs": "luvc"
+			"curseCount": 1,
+			"cursedRole": "variable:luvdisc curse",
+			"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
+			"copyfailmsg": "",
+			"curseConvertMessage": "",
+			"silentCurse": true, "silent": true, "silentConvert": true,
+			"copyAs": "luvc"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -983,7 +985,7 @@
                         "command": [ "dispel", "convert"],
                         "target": "AnyButSelf",
                         "common": "Self",
-						"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
+			"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
@@ -994,7 +996,7 @@
                     "protect": {
                         "target": "AnyButSelf",
                         "common": "Self",
-						"broadcast": "team",
+			"broadcast": "team",
                         "priority": 10
                     }
                 },
@@ -1004,12 +1006,12 @@
         {
             "role": "reli",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+	    "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"lynch": {
+		"distract": { "silent": true, "mode": "ignore" },
+		"lynch": {
                     "convertTo": "relib",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
                 },
@@ -1050,10 +1052,10 @@
         {
             "role": "relib",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+	    "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "hide": true,
-			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
+	    "help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
 				"distract": { "silent": true, "mode": "ignore" },
                 "hax": {
@@ -1080,7 +1082,7 @@
                 },
                 "night": {
                     "kill": {
-						"hide": true,
+			"hide": true,
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 9
@@ -1094,7 +1096,7 @@
         {
             "role": "reli2",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
+	    "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
