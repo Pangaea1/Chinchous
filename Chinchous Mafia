@@ -1,6 +1,6 @@
 {
     "name": "Chinchous",
-    "author": ["Pangaea"],
+    "author": ["Pangaea", "Obey to Kyubey"],
     "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
      "variables":{
 				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
@@ -84,8 +84,8 @@
                         "revealPlayer": 0.1
                     },
                     "rally": {
-                        "revealRole": 0.3,
-                        "revealPlayer": 0.3
+                        "revealRole": 0.2,
+                        "revealPlayer": 0.2
                     },
                     "protect": {
                         "revealTeam": 0.1,
@@ -125,8 +125,8 @@
                         "revealPlayer": 0.1
                     },
                     "rally": {
-                        "revealRole": 0.2,
-                        "revealPlayer": 0.2
+                        "revealRole": 0.15,
+                        "revealPlayer": 0.15
                     },
                     "protect": {
                         "revealTeam": 0.1,
@@ -472,7 +472,7 @@
             "side": "fish",
             "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!). Your vote counts as 2 as well. ",
             "actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "kill": {
@@ -500,7 +500,7 @@
             "help": "You are an Octillery! You are a commander of the Alliance, allowing you to /kill 1 person during the night. You may also /kill one person during the day, but this will get you revealed, so it is a sacrificial move, only use it in desperate situations (Or in situations where you can't lose)! Your vote will also count as 2.",
             "actions": {
                 "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "kill": {
@@ -532,7 +532,7 @@
                     "curse": { "cursedRole": "maninspup", "curseCount": 5, "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
                     } },
 				"onDeadRoles": { "convertTo": { "maninspup": ["rem"] }, "convertmsg": "Mantyke (Inspector) evolved into Mantine (Inspector)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
@@ -557,7 +557,7 @@
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "scout": {
@@ -588,7 +588,7 @@
                     "curse": { "cursedRole": "manbgup", "curseCount": 5, "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
                     } },
 				"onDeadRoles": { "convertTo": { "manbgup": ["rem"] }, "convertmsg": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
@@ -614,7 +614,7 @@
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "use": {
@@ -646,7 +646,7 @@
                     "curse": { "cursedRole": "manvoteup", "curseCount": 5, "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
                     } },
 				"onDeadRoles": { "convertTo": { "manvoteup": ["rem"] }, "convertmsg": "Mantyke (Mayor) evolved into Mantine (Mayor)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "vote": -99
             }
@@ -664,7 +664,7 @@
             "actions": {
                 "onlist": "mantine", "onteam": "mantine",
                 "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "vote": -99,
                 "night": {
@@ -744,7 +744,7 @@
             "side": "fish",
             "help": "You are an Alomomola! You have uh...about...OVER 9000 HP!!! More like 500, but still. Because of this HP amount, your vote is increased to 50, meaning no one but the -99 vote Mantyke can stop it(but he's on your team anyway)! You can also spam the command /hax [Your Name]! If you spam this enough, the Remoraid might connect you with other Alliance!",
             "actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
                 "night": {
                     "hax": {
@@ -904,15 +904,15 @@
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-			"usermsg": "",
+						"usermsg": "",
                         "newRole": "alomm",
-			"curseCount": 1,
-			"cursedRole": "variable:luvdisc curse",
-			"curseConvertMessage": "",
-			"convertfailmsg": "",
-			"copyfailmsg": "",
-			"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
-			"copyAs": "luvb"
+						"curseCount": 1,
+						"cursedRole": "variable:luvdisc curse",
+						"curseConvertMessage": "",
+						"convertfailmsg": "",
+						"copyfailmsg": "",
+						"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
+						"copyAs": "luvb"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -948,15 +948,15 @@
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-			"usermsg": "",
+						"usermsg": "",
                         "newRole": "alomf",
-			"curseCount": 1,
-			"cursedRole": "variable:luvdisc curse",
-			"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
-			"copyfailmsg": "",
-			"curseConvertMessage": "",
-			"silentCurse": true, "silent": true, "silentConvert": true,
-			"copyAs": "luvc"
+						"curseCount": 1,
+						"cursedRole": "variable:luvdisc curse",
+						"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
+						"copyfailmsg": "",
+						"curseConvertMessage": "",
+						"silentCurse": true, "silent": true, "silentConvert": true,
+						"copyAs": "luvc"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -985,7 +985,7 @@
                         "command": [ "dispel", "convert"],
                         "target": "AnyButSelf",
                         "common": "Self",
-			"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
+						"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
@@ -996,7 +996,7 @@
                     "protect": {
                         "target": "AnyButSelf",
                         "common": "Self",
-			"broadcast": "team",
+						"broadcast": "team",
                         "priority": 10
                     }
                 },
@@ -1006,12 +1006,12 @@
         {
             "role": "reli",
             "translation": "Relicanth",
-	    "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
-		"distract": { "silent": true, "mode": "ignore" },
-		"lynch": {
+				"distract": { "silent": true, "mode": "ignore" },
+				"lynch": {
                     "convertTo": "relib",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
                 },
@@ -1052,10 +1052,10 @@
         {
             "role": "relib",
             "translation": "Relicanth",
-	    "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "hide": true,
-	    "help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
+			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
 				"distract": { "silent": true, "mode": "ignore" },
                 "hax": {
@@ -1082,7 +1082,7 @@
                 },
                 "night": {
                     "kill": {
-			"hide": true,
+						"hide": true,
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 9
@@ -1096,7 +1096,7 @@
         {
             "role": "reli2",
             "translation": "Relicanth",
-	    "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
+			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
@@ -1432,7 +1432,7 @@
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
 				"standby": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1456,7 +1456,7 @@
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
 				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
@@ -1480,7 +1480,7 @@
 			"actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
 				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
@@ -1503,7 +1503,7 @@
             "actions": {
                 "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
+                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
 				"night": {
                     "kill": {
 						"command": ["kill", "dummy9"],
