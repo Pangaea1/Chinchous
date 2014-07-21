@@ -34,7 +34,7 @@
         {
             "side": "fishsp",
             "translation": "Alliance",
-            "winmsg": "We have saved the ocean from the liked of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill every non-Alliance member we see!"
+            "winmsg": "We have saved the ocean from the likes of those Chinchous! Now we, ~Players~, shall continue to patrol the ocean, and kill every non-Alliance member we see!"
         },
         {
             "side": "reli",
@@ -65,7 +65,13 @@
 			"infoName": "Finneon (Villager)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
+            "actions": {d off, you will weakened...",
+            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
             "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.1,
+           
                 "hax": {
                     "kill": {
                         "revealTeam": 0.1,
@@ -143,13 +149,7 @@
             "translation": "Finneon",
 			"infoName": "Finneon (Lover)",
             "side": "village",
-            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you will weakened...",
-            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
-            "actions": {
-                "hax": {
-                    "rally": {
-                        "revealRole": 0.1,
-                        "revealPlayer": 0.1
+            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is vote             "revealPlayer": 0.1
                     }
                 },
 				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
@@ -731,7 +731,7 @@
                 "standby": {
                     "reveal": {
                 "msg": "Type /reveal to show everyone who you are, but think twice before doing so!",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 }
             }
@@ -891,7 +891,7 @@
             "role": "luva",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
+            "help": "HAHAHAHA. You got the weakest role in the theme (Blame the Gamebot.) However, you actually do have some power...Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
 				"preventTeamvote": true,
@@ -927,9 +927,9 @@
             "role": "luvb",
             "translation": "Luvdisc",
             "side": "luv",
-            "help": "Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
+            "help": "HAHAHAHA. You got the weakest role in the theme (blame the Gamebot.) However, you actually have some power...Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
             "hide": true,
-            "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
+            "info": "Can transform 2 targets into Alomomolas. Can protect one person during the night. Sided with Luvdisc Love.",
             "actions": {
 				"preventTeamvote": true,
 				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
@@ -1013,7 +1013,7 @@
 				"distract": { "silent": true, "mode": "ignore" },
 				"lynch": {
                     "convertTo": "relib",
-                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey, did someone try to vote me out?"
                 },
                 "hax": {
                     "kill": {
@@ -1055,7 +1055,7 @@
 			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "hide": true,
-			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
+			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the dephts of the ocean you can sometimes find out what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
 				"distract": { "silent": true, "mode": "ignore" },
                 "hax": {
@@ -1108,7 +1108,7 @@
 				"distract": { "silent": true, "mode": "ignore" },
 				"lynch": {
                     "convertTo": "reli2b",
-                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
+                    "convertmsg": "±Relicanth: Yawn... What's happening ? Hey, did someone try to vote me out?"
                 },
                 "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
                 "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
@@ -1153,7 +1153,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1177,7 +1177,7 @@
             "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
 			"actions": {
 				"distract": { "silent": true, "mode": "ignore" },
-                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "kill": { "msg":"Your target, ~Self~, the Relicanth, is immune to your attack, but don't worry they could actually win twith you, so if you want you can PM them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
                 "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
                 "night": {
@@ -1222,7 +1222,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1265,7 +1265,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1304,7 +1304,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1346,7 +1346,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1384,7 +1384,7 @@
 						"msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
-                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves at the centre of attention."
+                        "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
@@ -1430,7 +1430,7 @@
             "side": "chin",
             "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can daykill(Using /kill)! You also have 2 votes instead of 1. Your Volt Absorb ability makes you immune to your Chinchous partners attacks. But that's about it...",
 			"actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
+                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss, Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
                 "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
                 "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
 				"standby": {
