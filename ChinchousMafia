@@ -1,11 +1,126 @@
 {
     "name": "Chinchous",
-    "author": ["Pangaea", "Obey to Kyubey"],
+    "author": [
+        "Pangaea",
+        "Obey to Kyubey"
+    ],
     "summary": "The original Chinchous theme, back and better than ever before! | The evil (but awesome) Chinchous are invading the Pacific Ocean! Do you have what it takes to stop them? Battle it out in the ocean to see who is the best and who is worthy to take control! May the best fish/octopus/stingray/etc. win! | Originally created by Chinchou, Zzyzx and Magnemite, edited/updated by Pangaea and Obey To Kyubey.",
-     "variables":{
-				"luvdisc curse":{ "fin": [ "fin"], "bomb": [ "bomb"], "lovera": [ "lovera"], "loverb": [ "loverb"], "mayor": [ "mayor"], "vigi": [ "vigi"], "unkill": [ "unkill"], "insp": [ "insp"], "hooker": [ "hooker"], "bg": [ "bg"], "lum": [ "lum"], "float": [ "float"], "tenta1": [ "tenta1"], "tenta2": [ "tenta2"], "dragalge": [ "dragalge"], "man": [ "man"], "oct": [ "oct"], "maninsp": [ "maninsp"], "manbg": [ "manbg"], "manvote": [ "manvote"], "rem": [ "rem"], "maninspup": [ "maninspup"], "manbgup": [ "manbgup"], "manvoteup": [ "manvoteup"], "reli": [ "reli"], "reli2": [ "reli2"], "reli2float": [ "reli2float"], "reli2luv": [ "reli2luv"], "schin": [ "schin"], "magikarp": [ "magikarp"], "gyarados": [ "gyarados"], "feebas": [ "feebas"], "milotic": [ "milotic"], "lan": [ "lan"], "chin1": [ "chin1"], "chin2": [ "chin2"], "chin3": [ "chin3"]}
-				},
-	"sides": [
+    "variables": {
+        "luvdisc curse": {
+            "fin": [
+                "fin"
+            ],
+            "bomb": [
+                "bomb"
+            ],
+            "lovera": [
+                "lovera"
+            ],
+            "loverb": [
+                "loverb"
+            ],
+            "mayor": [
+                "mayor"
+            ],
+            "vigi": [
+                "vigi"
+            ],
+            "unkill": [
+                "unkill"
+            ],
+            "insp": [
+                "insp"
+            ],
+            "hooker": [
+                "hooker"
+            ],
+            "bg": [
+                "bg"
+            ],
+            "lum": [
+                "lum"
+            ],
+            "float": [
+                "float"
+            ],
+            "tenta1": [
+                "tenta1"
+            ],
+            "tenta2": [
+                "tenta2"
+            ],
+            "dragalge": [
+                "dragalge"
+            ],
+            "man": [
+                "man"
+            ],
+            "oct": [
+                "oct"
+            ],
+            "maninsp": [
+                "maninsp"
+            ],
+            "manbg": [
+                "manbg"
+            ],
+            "manvote": [
+                "manvote"
+            ],
+            "rem": [
+                "rem"
+            ],
+            "maninspup": [
+                "maninspup"
+            ],
+            "manbgup": [
+                "manbgup"
+            ],
+            "manvoteup": [
+                "manvoteup"
+            ],
+            "reli": [
+                "reli"
+            ],
+            "reli2": [
+                "reli2"
+            ],
+            "reli2float": [
+                "reli2float"
+            ],
+            "reli2luv": [
+                "reli2luv"
+            ],
+            "schin": [
+                "schin"
+            ],
+            "magikarp": [
+                "magikarp"
+            ],
+            "gyarados": [
+                "gyarados"
+            ],
+            "feebas": [
+                "feebas"
+            ],
+            "milotic": [
+                "milotic"
+            ],
+            "lan": [
+                "lan"
+            ],
+            "chin1": [
+                "chin1"
+            ],
+            "chin2": [
+                "chin2"
+            ],
+            "chin3": [
+                "chin3"
+            ]
+        }
+    },
+    "sides": [
         {
             "side": "village",
             "translation": "Finneons",
@@ -61,17 +176,11 @@
         {
             "role": "fin",
             "translation": "Finneon",
-			"info": "A basic villager with a chance of hax. Sided with the Finneons.",
-			"infoName": "Finneon (Villager)",
+            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
+            "infoName": "Finneon (Villager)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
-            "actions": {d off, you will weakened...",
-            "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because it is already madly in love. Sided with Finneons.",
             "actions": {
-                "hax": {
-                    "rally": {
-                        "revealRole": 0.1,
-           
                 "hax": {
                     "kill": {
                         "revealTeam": 0.1,
@@ -108,8 +217,8 @@
         {
             "role": "bomb",
             "translation": "Finneon",
-			"infoName": "Finneon (Bomb)",
-			"info":"Sees itself as a Finneon. Receives hax on Kill and Poison. Brings its killer down with it when killed. Sided with Finneons.",
+            "infoName": "Finneon (Bomb)",
+            "info": "Sees itself as a Finneon. Receives hax on Kill and Poison. Brings its killer down with it when killed. Sided with Finneons.",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. You do however, receive hax on Kill and Poison (And on the PRs of your own team), and have a 8% chance to evade nightkills. And if your team wins, I will LOL. -Love, the Role Description Writer.",
             "actions": {
@@ -147,25 +256,35 @@
         {
             "role": "lovera",
             "translation": "Finneon",
-			"infoName": "Finneon (Lover)",
+            "infoName": "Finneon (Lover)",
             "side": "village",
-            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is vote             "revealPlayer": 0.1
+            "help": "You are Finneon, a really weak Pokemon. You don't really need to be in this but your mother forced you to, but you can't really do anything at all. But you are, however, madly in love with your lover, the other Finneon <3. Use /tt to talk with them. This means that you will know them from the start and they will know you. But if your lover dies or is voted off, you'll lose your vote!",
+            "actions": {
+                "hax": {
+                    "rally": {
+                        "revealRole": 0.1,
+                        "revealPlayer": 0.1
                     }
                 },
-				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
                 "onDeath": {
-                    "convertRoles": { "lovera": "loverb" },
+                    "convertRoles": {
+                        "lovera": "loverb"
+                    },
                     "convertmsg": "±Game: With their Lover gone, the other Finneon (Lover) loses their vote for the sadness!"
                 },
-				"teamTalk": [ "lovera"],
-                "startup": { "revealRole": "lovera" }
+                "teamTalk": [
+                    "lovera"
+                ],
+                "startup": {
+                    "revealRole": "lovera"
+                }
             }
         },
         {
             "role": "loverb",
             "translation": "Finneon",
-			"infoName": "Finneon (Lover)",
-			"hide": true,
+            "infoName": "Finneon (Lover)",
+            "hide": true,
             "side": "village",
             "help": "Your lover has died, and all you can think about is their soft touch...and the way their fins moved while they swam...and those gorgeous never-closing eyes...therefore you have no time to think about voting so your vote counts as 0.",
             "info": "Knows the other Finneon (Lover). If the other Lover dies their vote power will become 0. Cannot be converted by Luvdisc because is already madly in love. Sided with Finneons.",
@@ -176,17 +295,50 @@
                         "revealPlayer": 0.1
                     }
                 },
-				"vote":0,
-				"convert": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "copy": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} }, "curse": { "silent": true,"mode": {"ignore": ["luva","luvb","luvc"]} },
-				"teamTalk": [ "lovera"],
-                "startup": { "revealRole": "lovera" }
+                "vote": 0,
+                "convert": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "teamTalk": [
+                    "lovera"
+                ],
+                "startup": {
+                    "revealRole": "lovera"
+                }
             }
         },
         {
             "role": "mayor",
             "translation": "Finneon",
-			"info": "A mayor with a vote of 3 and a chance of hax. Sided with the Finneons.",
-			"infoName": "Finneon (Mayor)",
+            "info": "A mayor with a vote of 3 and a chance of hax. Sided with the Finneons.",
+            "infoName": "Finneon (Mayor)",
             "side": "village",
             "help": "You are a Finneon, a weak little Pokemon. When you were raised, you wanted to be a leader. And you got your wish! You are the mayor of the Finneons, your vote counting as 3. You also recieve hax on Kill, Poison, and on PRs of your team!",
             "actions": {
@@ -222,8 +374,8 @@
         {
             "role": "vigi",
             "translation": "Finneon",
-			"info": "Can kill one person during the night. Sided with the Finneons.",
-			"infoName": "Finneon (Vigilante)",
+            "info": "Can kill one person during the night. Sided with the Finneons.",
+            "infoName": "Finneon (Vigilante)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. But, luckily for you, the Lumineons have trained you to become the strongest Finneon ever. Somehow they trained so much that you can /kill another Pokemon during the night!",
             "actions": {
@@ -245,8 +397,8 @@
         {
             "role": "unkill",
             "translation": "Finneon",
-			"info": "Avoids all nightkills. Sided with the Finneons.",
-			"infoName": "Finneon (BulletProof)",
+            "info": "Avoids all nightkills. Sided with the Finneons.",
+            "infoName": "Finneon (BulletProof)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. You are even weaker than the other Finneons, as you run from battle every time. However, this means you cannot be nightkilled, as you sleep in caves, hiding from the Chinchous. But for some strange reason you're brave enough to come out during the day (I don't really know why) so you're still vulnerable to daykills.",
             "actions": {
@@ -264,8 +416,8 @@
         {
             "role": "insp",
             "translation": "Finneon",
-			"info": "Can inspect one person during the night. Sided with the Finneons.",
-			"infoName": "Finneon (Inspector)",
+            "info": "Can inspect one person during the night. Sided with the Finneons.",
+            "infoName": "Finneon (Inspector)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /inspect one person per night to find out their role! Just don't claim...unless you want to die. (Hint: You don't want to die.)",
             "actions": {
@@ -287,8 +439,8 @@
         {
             "role": "hooker",
             "translation": "Finneon",
-			"info": "Can distract 1 target every night. Has a low chance to hax Lumineon's /rally command. Sided with the Finneons.",
-			"infoName": "Finneon (Distractor)",
+            "info": "Can distract 1 target every night. Has a low chance to hax Lumineon's /rally command. Sided with the Finneons.",
+            "infoName": "Finneon (Distractor)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /distract 1 person during the night!",
             "actions": {
@@ -311,8 +463,8 @@
         {
             "role": "bg",
             "translation": "Finneon",
-			"info": "Can protect one person during the night. Sided with the Finneons.",
-			"infoName": "Finneon (Protector)",
+            "info": "Can protect one person during the night. Sided with the Finneons.",
+            "infoName": "Finneon (Protector)",
             "side": "village",
             "help": "You are a Finneon, a really weak Pokemon. However, you are different from all the other Finneons. Why? Because you can /protect 1 person during the night!",
             "actions": {
@@ -335,7 +487,7 @@
         {
             "role": "lum",
             "translation": "Lumineon",
-			"info": "A non-revealing day killer. Can rally during the night so Finneons can receive hax on the user. Vote counts as 2. Sided with the Finneons.",
+            "info": "A non-revealing day killer. Can rally during the night so Finneons can receive hax on the user. Vote counts as 2. Sided with the Finneons.",
             "side": "village",
             "help": "You are a Lumineon, and you have evolved from your weak form. CHINCHOUS SUCK. You can finally fight back against the Chinchous and kill them...slowly and painfully...during the standby using /kill! Since you are a leader of the Finneons now, you can also call the Finneons with /rally for the Finneons to get hax on you! Sad thing is that you can no longer receive hax on Kill or Poison (unlike your Finneon friends.) Your vote also counts as 2.",
             "actions": {
@@ -343,8 +495,10 @@
                     "rally": {
                         "command": "dummy",
                         "target": "OnlySelf",
-						"limit": 1,
-						"restrict": ["rally"],
+                        "limit": 1,
+                        "restrict": [
+                            "rally"
+                        ],
                         "common": "Role",
                         "priority": 99
                     }
@@ -362,12 +516,12 @@
         {
             "role": "tenta1",
             "translation": "Tentacool",
-			"info": "Can poison one person during the night, killing them the following night. Can hide every 2 nights to avoid all nightkills, but can't use any other actions during that night. Can also wrap someone during the night, acting as a distract. Vote counts as -2. Sided with the Toxic Fishes.",
+            "info": "Can poison one person during the night, killing them the following night. Can hide every 2 nights to avoid all nightkills, but can't use any other actions during that night. Can also wrap someone during the night, acting as a distract. Vote counts as -2. Sided with the Toxic Fishes.",
             "side": "tenta",
             "help": "You are a Tentacool! You hate how horrible Chinchous look, thus you want to just murder them all. You may /poison 1 person per night, causing them to die the following night. You also have a vote of -2 because you are hated by the native Finneons. Your skills of camouflage can aid you with /hide to protect yourself from nightkills, but when you are hiding, you cannot use any other commands and you can use this ability only every 2 nights. You may also /wrap 1 person during the night to have them unable to perform any actions during the night!",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "night": {
                     "wrap": {
                         "command": "distract",
@@ -383,7 +537,7 @@
                         "command": "protect",
                         "target": "Self",
                         "common": "Role",
-						"recharge": 2,
+                        "recharge": 2,
                         "priority": 7,
                         "cancel": [
                             "wrap",
@@ -410,9 +564,9 @@
             "side": "tenta",
             "help": "You are a giant seahorse-dragon-poison thing. We don't really know what you are but you have decided to side yourself with the Toxic Fishes since you think Chinchous look horrible, too! During the night, you can /poison somebody (this is shared with your team) and they will die the next day. You also get an individual /kill that can only be used three times per game. You avoid all daykills since everyone is too afraid to get near your poisonous scales.",
             "info": "Can poison one person during the night. Can kill three people per game. Avoids all daykills. Sided with Toxic Fishes.",
-			"actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+            "actions": {
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "night": {
                     "poison": {
                         "target": "AnyButTeam",
@@ -423,25 +577,25 @@
                     "kill": {
                         "target": "AnyButTeam",
                         "common": "Team",
-						"limit": 1,
-						"charges": 3,
+                        "limit": 1,
+                        "charges": 3,
                         "broadcast": "team",
                         "priority": 10
                     }
                 },
-				"daykill": "evade",
+                "daykill": "evade",
                 "startup": "team-reveal"
             }
         },
         {
             "role": "tenta2",
             "translation": "Tentacruel",
-			"info": "Can poison one person during the night, killing them the following night. Can wrap someone during the night, acting as a distract. Avoids all nightkills. Vote counts as 2. Sided with the Toxic Fishes.",
+            "info": "Can poison one person during the night, killing them the following night. Can wrap someone during the night, acting as a distract. Avoids all nightkills. Vote counts as 2. Sided with the Toxic Fishes.",
             "side": "tenta",
             "help": "You are a Tentacruel, you are more powerful than Tentacool because evolution(No Eviolites). Thus you can not be nightkilled. You can /poison one person per night, causing them to die the following night, and you can also /wrap 1 person to make them unable to do anything during the night. Only difference is that your vote is now 2.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "night": {
                     "wrap": {
                         "command": "distract",
@@ -467,22 +621,77 @@
         {
             "role": "man",
             "translation": "Mantine (Leader)",
-			"infoName": "Mantine (Leader)",
-			"info": "Can kill one person during the night. Can defend (protect) two people during the night. Vote counts as 2. Sided with the Alliance.",
+            "infoName": "Mantine (Leader)",
+            "info": "Can kill one person during the night. Can defend (protect) two people during the night. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
             "help": "You are a Mantine! You created the Alliance to help defend yourself against the Chinchous! Thus you can /kill 1 person during the night! You can also /defend 2 people during the night from kills(Be sure to protect others on the Alliance!). Your vote counts as 2 as well. ",
             "actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
-						"command": ["kill", "dummy10"],
+                        "command": [
+                            "kill",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 11
                     },
                     "defend": {
-                        "command": ["protect", "dummy10"],
+                        "command": [
+                            "protect",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Role",
                         "priority": 7,
@@ -495,16 +704,70 @@
         {
             "role": "oct",
             "translation": "Octillery",
-			"info": "Can kill one person during the night. Can also kill someone during the day, but will be revealed. Vote counts as 2. Sided with the Alliance.",
+            "info": "Can kill one person during the night. Can also kill someone during the day, but will be revealed. Vote counts as 2. Sided with the Alliance.",
             "side": "fish",
             "help": "You are an Octillery! You are a commander of the Alliance, allowing you to /kill 1 person during the night. You may also /kill one person during the day, but this will get you revealed, so it is a sacrificial move, only use it in desperate situations (Or in situations where you can't lose)! Your vote will also count as 2.",
             "actions": {
-                "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "initialCondition": {
+                    "clearCurse": true
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
-						"command": ["kill", "dummy10"],
+                        "command": [
+                            "kill",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Role",
                         "priority": 10
@@ -523,20 +786,83 @@
         {
             "role": "maninsp",
             "translation": "Mantyke",
-			"info": "Can scout (inspect) one person during the night. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
-			"infoName": "Mantyke (Inspector)",
+            "info": "Can scout (inspect) one person during the night. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+            "infoName": "Mantyke (Inspector)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a detector scope with you during this battle, giving you the power to /scout(inspect) 1 person during the night! Use this ability to find your allies! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
-				"initialCondition": {
-                    "curse": { "cursedRole": "maninspup", "curseCount": 5, "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
-                    } },
-				"onDeadRoles": { "convertTo": { "maninspup": ["rem"] }, "convertmsg": "Mantyke (Inspector) evolved into Mantine (Inspector)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "initialCondition": {
+                    "curse": {
+                        "cursedRole": "maninspup",
+                        "curseCount": 5,
+                        "curseConvertMessage": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
+                    }
+                },
+                "onDeadRoles": {
+                    "convertTo": {
+                        "maninspup": [
+                            "rem"
+                        ]
+                    },
+                    "convertmsg": "Mantyke (Inspector) evolved into Mantine (Inspector)!"
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "scout": {
-                        "command": ["inspect", "dummy10"],
+                        "command": [
+                            "inspect",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 31
@@ -552,22 +878,80 @@
                 "fish"
             ],
             "side": "fishsp",
-			"info": "Mantyke (Inspector) when evolved. Can Inspect another player every night. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
+            "info": "Mantyke (Inspector) when evolved. Can Inspect another player every night. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /scout! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
-                "onlist": "mantine", "onteam": "mantine",
-                "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "onlist": "mantine",
+                "onteam": "mantine",
+                "initialCondition": {
+                    "clearCurse": true
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "scout": {
-                        "command": ["inspect", "dummy10"],
+                        "command": [
+                            "inspect",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 31
                     },
                     "kill": {
-						"command": ["kill", "dummy10"],
+                        "command": [
+                            "kill",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -579,20 +963,83 @@
         {
             "role": "manbg",
             "translation": "Mantyke",
-			"info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
-			"infoName": "Mantyke (Safeguarder)",
+            "info": "Can use (safeguard) one person during the night, protecting them from poisons. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+            "infoName": "Mantyke (Safeguarder)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring many Antidotes to this battle, giving you the power to /use your antidotes to protect poison for up to 1 person! If you will survive 5 nights you will evolve into a Mantine! Use this to protect your allies from poison!",
             "actions": {
-				"initialCondition": {
-                    "curse": { "cursedRole": "manbgup", "curseCount": 5, "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
-                    } },
-				"onDeadRoles": { "convertTo": { "manbgup": ["rem"] }, "convertmsg": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "initialCondition": {
+                    "curse": {
+                        "cursedRole": "manbgup",
+                        "curseCount": 5,
+                        "curseConvertMessage": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
+                    }
+                },
+                "onDeadRoles": {
+                    "convertTo": {
+                        "manbgup": [
+                            "rem"
+                        ]
+                    },
+                    "convertmsg": "Mantyke (Safeguarder) evolved into Mantine (Safeguarder)!"
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "use": {
-                        "command": ["safeguard", "dummy10"],
+                        "command": [
+                            "safeguard",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 4,
@@ -609,23 +1056,81 @@
                 "fish"
             ],
             "side": "fishsp",
-			"info": "Mantyke (Safeguarder) when evolved. Can use Safeguard every night on another player. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
+            "info": "Mantyke (Safeguarder) when evolved. Can use Safeguard every night on another player. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your /use! However, since you are not the true leader, and you JUST evolved, you cannot defend, and your vote will count as 1. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
-                "onlist": "mantine", "onteam": "mantine",
-                "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "onlist": "mantine",
+                "onteam": "mantine",
+                "initialCondition": {
+                    "clearCurse": true
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "use": {
-                        "command": ["safeguard", "dummy10"],
+                        "command": [
+                            "safeguard",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 4,
                         "limit": 2
                     },
                     "kill": {
-						"command": ["kill", "dummy10"],
+                        "command": [
+                            "kill",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -637,17 +1142,77 @@
         {
             "role": "manvote",
             "translation": "Mantyke",
-			"info": "Vote counts as -99. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
-			"infoName": "Mantyke (Mayor)",
+            "info": "Vote counts as -99. If Remoraid dies or after 5 nights, Mantyke will evolve and gain a kill. Sided with the Alliance.",
+            "infoName": "Mantyke (Mayor)",
             "side": "fish",
             "help": "You are a Mantyke, a soldier from the Alliance! You remembered to bring a hacking device to this battle! By voting for someone during the day, your hacking device will activate, allowing you to hack into the Voting Machine and preventing that player from getting lynched in any way! If you will survive 5 nights you will evolve into a Mantine!",
             "actions": {
-				"initialCondition": {
-                    "curse": { "cursedRole": "manvoteup", "curseCount": 5, "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
-                    } },
-				"onDeadRoles": { "convertTo": { "manvoteup": ["rem"] }, "convertmsg": "Mantyke (Mayor) evolved into Mantine (Mayor)!"},
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "initialCondition": {
+                    "curse": {
+                        "cursedRole": "manvoteup",
+                        "curseCount": 5,
+                        "curseConvertMessage": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
+                    }
+                },
+                "onDeadRoles": {
+                    "convertTo": {
+                        "manvoteup": [
+                            "rem"
+                        ]
+                    },
+                    "convertmsg": "Mantyke (Mayor) evolved into Mantine (Mayor)!"
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "vote": -99
             }
         },
@@ -659,17 +1224,72 @@
                 "fish"
             ],
             "side": "fishsp",
-			"info": "Mantyke (Mayor) when evolved. Vote counts as -99. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
+            "info": "Mantyke (Mayor) when evolved. Vote counts as -99. Shares a kill with the other Mantines apart Mantine (Leader). Sided with the Alliance.",
             "help": "You are a Mantine! Your best friend, Remoraid, has died, and his dying wish was for you to make the final blow. Thus, you evolved. As a Mantine, you may now /kill someone in addition to your -99 votes! However, since you are not the true leader, and you JUST evolved, you cannot defend. Also, you are still sided with the original Alliance, SO DON'T TEAMKILL.",
             "actions": {
-                "onlist": "mantine", "onteam": "mantine",
-                "initialCondition": { "clearCurse": true },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "onlist": "mantine",
+                "onteam": "mantine",
+                "initialCondition": {
+                    "clearCurse": true
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "vote": -99,
                 "night": {
                     "kill": {
-						"command": ["kill", "dummy10"],
+                        "command": [
+                            "kill",
+                            "dummy10"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Team",
                         "priority": 11,
@@ -681,27 +1301,72 @@
         {
             "role": "mantine",
             "translation": "Mantine",
-			"hide": true,
+            "hide": true,
             "side": "fish",
             "help": "This is a Dummy role.",
-            "actions": { }
+            "actions": {}
         },
         {
             "role": "rem",
             "translation": "Remoraid",
-			"info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Remoraid will evolve into Octillery after 5 nights or when there are no more Mantykes around. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
+            "info": "Avoids all daykills. Has a vote of 0.9 and a voteshield of -1. Receives hax on actions used by the Alliance. Can also reveal itself during the day. Remoraid will evolve into Octillery after 5 nights or when there are no more Mantykes around. Mantykes will evolve into Mantines if Remoraid dies. Sided with the Alliance. ",
             "side": "fish",
             "help": "You are a Remoraid! You are a special soldier from the Alliance, and you wear an anti-daykilling suit! The suit also gives you a voteshield of -1. The suit does only give you 0.9 votes. You will also receive hax on the Alliance, so be sure to connect with them! If you feel brave you can use /reveal during the day to show everyone who you are. But be careful, as Relicanth can reveal itself with the same message as yours. If you survive 5 nights or if there are no Mantykes you will evolve into an Octillery!",
             "actions": {
-				"initialCondition": {
-                    "curse": { "cursedRole": "oct", "curseCount": 5, "curseConvertMessage": "Remoraid evolved into Octillery!"
-                    } },
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "initialCondition": {
+                    "curse": {
+                        "cursedRole": "oct",
+                        "curseCount": 5,
+                        "curseConvertMessage": "Remoraid evolved into Octillery!"
+                    }
+                },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "voteshield": -1,
                 "vote": 0.9,
                 "daykill": "evade",
-				"onDeadRoles": { "convertTo": { "oct": ["manvote", "manbg", "maninsp"] }, "convertmsg": "All the Mantykes evolved or are dead and now Remoraid can evolve finally into Octillery!"},
+                "onDeadRoles": {
+                    "convertTo": {
+                        "oct": [
+                            "manvote",
+                            "manbg",
+                            "maninsp"
+                        ]
+                    },
+                    "convertmsg": "All the Mantykes evolved or are dead and now Remoraid can evolve finally into Octillery!"
+                },
                 "onDeath": {
                     "convertRoles": {
                         "maninsp": "maninspup",
@@ -730,7 +1395,7 @@
                 },
                 "standby": {
                     "reveal": {
-                "msg": "Type /reveal to show everyone who you are, but think twice before doing so!",
+                        "msg": "Type /reveal to show everyone who you are, but think twice before doing so!",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 }
@@ -739,13 +1404,62 @@
         {
             "role": "al",
             "translation": "Alomomola",
-			"info": "Vote counts as 50. Can use hax during the night so Remoraid can find Alomomola during the night via hax. Sided with the Alliance.",
-			"hide": true,
+            "info": "Vote counts as 50. Can use hax during the night so Remoraid can find Alomomola during the night via hax. Sided with the Alliance.",
+            "hide": true,
             "side": "fish",
             "help": "You are an Alomomola! You have uh...about...OVER 9000 HP!!! More like 500, but still. Because of this HP amount, your vote is increased to 50, meaning no one but the -99 vote Mantyke can stop it(but he's on your team anyway)! You can also spam the command /hax [Your Name]! If you spam this enough, the Remoraid might connect you with other Alliance!",
             "actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } }, "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
-                "dummy10": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "man", "oct", "maninsp", "manbg", "manvote", "rem", "al", "maninspup", "manbgup", "manvoteup" ] } },
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
+                "dummy10": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "man",
+                            "oct",
+                            "maninsp",
+                            "manbg",
+                            "manvote",
+                            "rem",
+                            "al",
+                            "maninspup",
+                            "manbgup",
+                            "manvoteup"
+                        ]
+                    }
+                },
                 "night": {
                     "hax": {
                         "command": "protect",
@@ -760,7 +1474,7 @@
         {
             "role": "float",
             "translation": "Floatzel",
-			"info": "Can kill two people during the night. Brings its killer down with it when killed. Ignores all distracts and avoids all daykills. Vote counts as 2. Sided with itself.",
+            "info": "Can kill two people during the night. Brings its killer down with it when killed. Ignores all distracts and avoids all daykills. Vote counts as 2. Sided with itself.",
             "side": "float",
             "help": "You are a Floatzel! You are from a different region that nobody else is from. You came to this region due to the fact that your region has some *hint*incredible idiots*hint*. Being a Floatzel, you can /kill 2 people during the night! If any tries to kill you, you will take them down with you! You will ignore all distracters and wrappers (which is basically a distracter). You cannot be daykilled, and your vote counts as 2! Sound OP? Nope, because you are only sided with yourself.",
             "actions": {
@@ -789,13 +1503,20 @@
         {
             "role": "luv",
             "translation": "Luvdisc",
-			"hide": true,
-			"info": "Can kill one person during the day (non-revealing). Can distract one person during the night. Avoids all nightkills. Sided with itself.",
+            "hide": true,
+            "info": "Can kill one person during the day (non-revealing). Can distract one person during the night. Avoids all nightkills. Sided with itself.",
             "side": "luv",
             "help": "You are a Luvdisc. HAHAHAHAHAHAHA, you got the weakest role in this theme(Blame the GameBot). But actually, you are here to show your true capabilities as a Luvdisc. You cannot be nightkilled due to the killer thinking that you are worthless. You can /distract 1 person during the night with your fail. Plus, you can /kill 1 person during the standby(By making them laugh to death)! But you are all alone...I wish you good luck (you'll need it).",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
                 "night": {
                     "distract": {
                         "target": "AnyButSelf",
@@ -826,9 +1547,39 @@
             "help": "A Luvdisc made you fall in love! You can use /kill [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A killer (not shared) that dies if the other AlomomoLa♀ dies. Sided with Luvdisc Love.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
-				"convert": { "silent": true,"mode": {"ignore": ["luvb"]} }, "copy": { "silent": true,"mode": {"ignore": ["luvb"]} }, "curse": { "silent": true,"mode": {"ignore": ["luvb"]} },
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
+                "convert": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luvb"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luvb"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luvb"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButTeam",
@@ -861,8 +1612,15 @@
             "help": "A Luvdisc made you fall in love! You can use /distract [name] during the night (not shared) to repel any obstacle to your love, but if your lover dies, you will die too![Note: Use /myrole to find your partners and /tt to talk with them]",
             "info": "A Distractor (not shared) that dies if the other AlomomoLa♂ dies. Sided with Luvdisc Love.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
                 "night": {
                     "distract": {
                         "target": "AnyButTeam",
@@ -894,25 +1652,39 @@
             "help": "HAHAHAHA. You got the weakest role in the theme (Blame the Gamebot.) However, you actually do have some power...Your heart-like form gives you the ability to make other fishes fall in love! Use /love on two targets to recruit them as two Alomomolas and your helpers. One will be able to night-kill and the other will be able to distract during the night, but if one of them dies, both die (you'll be able to convert two more). You can /protect one of them during the night. Use /tt to talk with your allies.",
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
                 "night": {
                     "love": {
-                        "command": [ "curse", "convert", "copy"],
+                        "command": [
+                            "curse",
+                            "convert",
+                            "copy"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-						"usermsg": "",
+                        "usermsg": "",
                         "newRole": "alomm",
-						"curseCount": 1,
-						"cursedRole": "variable:luvdisc curse",
-						"curseConvertMessage": "",
-						"convertfailmsg": "",
-						"copyfailmsg": "",
-						"silentCurse": true, "silent": true, "silentConvert": true, "silentCopy": true,
-						"copyAs": "luvb"
+                        "curseCount": 1,
+                        "cursedRole": "variable:luvdisc curse",
+                        "curseConvertMessage": "",
+                        "convertfailmsg": "",
+                        "copyfailmsg": "",
+                        "silentCurse": true,
+                        "silent": true,
+                        "silentConvert": true,
+                        "silentCopy": true,
+                        "copyAs": "luvb"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -931,8 +1703,15 @@
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect one person during the night. Sided with Luvdisc Love.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
                 "initialCondition": {
                     "curse": {
                         "cursedRole": "luva",
@@ -942,21 +1721,27 @@
                 },
                 "night": {
                     "love": {
-                        "command": [ "curse", "convert", "copy"],
+                        "command": [
+                            "curse",
+                            "convert",
+                            "copy"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-						"usermsg": "",
+                        "usermsg": "",
                         "newRole": "alomf",
-						"curseCount": 1,
-						"cursedRole": "variable:luvdisc curse",
-						"convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
-						"copyfailmsg": "",
-						"curseConvertMessage": "",
-						"silentCurse": true, "silent": true, "silentConvert": true,
-						"copyAs": "luvc"
+                        "curseCount": 1,
+                        "cursedRole": "variable:luvdisc curse",
+                        "convertfailmsg": "One of your target died before that you could convert him or it wasn't possible to convert him.",
+                        "copyfailmsg": "",
+                        "curseConvertMessage": "",
+                        "silentCurse": true,
+                        "silent": true,
+                        "silentConvert": true,
+                        "copyAs": "luvc"
                     },
                     "protect": {
                         "target": "AnyButSelf",
@@ -975,28 +1760,48 @@
             "hide": true,
             "info": "Can transform 2 targets into Alomomolas. Can protect during the night. Sided with Luvdisc Love.",
             "actions": {
-				"preventTeamvote": true,
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
+                "preventTeamvote": true,
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
                 "initialCondition": {
                     "clearCurse": true
                 },
                 "night": {
                     "love": {
-                        "command": [ "dispel", "convert"],
+                        "command": [
+                            "dispel",
+                            "convert"
+                        ],
                         "target": "AnyButSelf",
                         "common": "Self",
-						"dispelmsg": "", "msg": "", "targetmsg": "", "dispelfailmsg": "",
+                        "dispelmsg": "",
+                        "msg": "",
+                        "targetmsg": "",
+                        "dispelfailmsg": "",
                         "priority": 24,
                         "charges": 2,
                         "limit": 2,
-                        "newRole": {"alomf": ["alomf"], "alomm": ["alomm"]},
+                        "newRole": {
+                            "alomf": [
+                                "alomf"
+                            ],
+                            "alomm": [
+                                "alomm"
+                            ]
+                        },
                         "convertmsg": "The Cupid shot a love arrow! The ~Old~ fell in love with someone!",
-						"usermsg": "~Target~ is now a ~New~!"
+                        "usermsg": "~Target~ is now a ~New~!"
                     },
                     "protect": {
                         "target": "AnyButSelf",
                         "common": "Self",
-						"broadcast": "team",
+                        "broadcast": "team",
                         "priority": 10
                     }
                 },
@@ -1006,12 +1811,15 @@
         {
             "role": "reli",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+            "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! The war has disturbed you, and you are willing to stop it. But, you are not very intelligent, thus you've decided to kill them to settle the war! You may /kill 1 person during the night. You cannot be haxed and from the deep of the ocean you can hax sometime what the other fishes are doing. You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"lynch": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "lynch": {
                     "convertTo": "relib",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey, did someone try to vote me out?"
                 },
@@ -1052,12 +1860,15 @@
         {
             "role": "relib",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
+            "info": "Can kill one person during the night. Cannot be haxed. Can hax every command that a normal Finneon (villager) can hax apart Lumineon's Rally. Survive the first time that get lynched and it's immune to distractions. Sided with itself.",
             "side": "reli",
             "hide": true,
-			"help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the dephts of the ocean you can sometimes find out what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
+            "help": "This fools tried to lynch you but you were too sleepy to care and survived. You may /kill 1 person during the night. You cannot be haxed and from the dephts of the ocean you can sometimes find out what the other fishes are doing. If you get distracted you simply will ignore it. But you are only sided with yourself.",
             "actions": {
-				"distract": { "silent": true, "mode": "ignore" },
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
                 "hax": {
                     "kill": {
                         "revealTeam": 0.1,
@@ -1082,7 +1893,7 @@
                 },
                 "night": {
                     "kill": {
-						"hide": true,
+                        "hide": true,
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 9
@@ -1096,7 +1907,7 @@
         {
             "role": "reli2",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
+            "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that gets lynched and is immune to distract. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
@@ -1104,25 +1915,69 @@
             ],
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
             "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"lynch": {
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "lynch": {
                     "convertTo": "reli2b",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey, did someone try to vote me out?"
                 },
-                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
-                "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
-                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "kill": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "float"
+                        ]
+                    }
+                },
+                "convert": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
                 "night": {
                     "floatzel": {
                         "command": "convert",
                         "convertmsg": "Relicanth now knows the identity of Floatzel.",
                         "target": "OnlySelf",
                         "common": "Self",
-						"hide": true,
+                        "hide": true,
                         "priority": 40,
-                        "newRole": { "reli2float": [ "reli2" ] },
-						"cancel": ["luvdisc"],
+                        "newRole": {
+                            "reli2float": [
+                                "reli2"
+                            ]
+                        },
+                        "cancel": [
+                            "luvdisc"
+                        ],
                         "silent": false
                     },
                     "luvdisc": {
@@ -1130,10 +1985,16 @@
                         "convertmsg": "Relicanth now knows the identity of Luvdisc.",
                         "target": "OnlySelf",
                         "common": "Self",
-						"hide": true,
+                        "hide": true,
                         "priority": 40,
-                        "newRole": { "reli2luv": [ "reli2" ] },
-						"cancel": ["floatzel"],
+                        "newRole": {
+                            "reli2luv": [
+                                "reli2"
+                            ]
+                        },
+                        "cancel": [
+                            "floatzel"
+                        ],
                         "silent": false
                     },
                     "discover Floatzel's or Luvdisc's name": {
@@ -1150,7 +2011,7 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
@@ -1166,30 +2027,74 @@
         {
             "role": "reli2b",
             "translation": "Relicanth",
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that get lynched and is immune to distract. Sided with Relicanth.",
+            "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Survive the first time that get lynched and is immune to distract. Sided with Relicanth.",
             "side": "reli",
-			"hide": true,
+            "hide": true,
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You survived your lynch but be careful, because there will not be a second time. After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either and are immune to their nocturnal abilities. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) If you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
             "help2": "P.S. You can actually type once /floatzel or /luvdisc, to discover the identity of one of your potential allies. But if you will do so then you will lose the immunity to the actions of the potential ally that you didn't choose!!",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-                "kill": { "msg":"Your target, ~Self~, the Relicanth, is immune to your attack, but don't worry they could actually win twith you, so if you want you can PM them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
-                "convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
-                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "kill": {
+                    "msg": "Your target, ~Self~, the Relicanth, is immune to your attack, but don't worry they could actually win twith you, so if you want you can PM them. But be cautious because if Luvdisc is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "float"
+                        ]
+                    }
+                },
+                "convert": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
                 "night": {
                     "floatzel": {
                         "command": "convert",
                         "convertmsg": "Relicanth now knows the identity of Floatzel.",
                         "target": "OnlySelf",
                         "common": "Self",
-						"hide": true,
+                        "hide": true,
                         "priority": 40,
-                        "newRole": { "reli2float": [ "reli2" ] },
-						"cancel": ["luvdisc"],
+                        "newRole": {
+                            "reli2float": [
+                                "reli2"
+                            ]
+                        },
+                        "cancel": [
+                            "luvdisc"
+                        ],
                         "silent": false
                     },
                     "luvdisc": {
@@ -1197,21 +2102,27 @@
                         "convertmsg": "Relicanth now knows the identity of Luvdisc.",
                         "target": "OnlySelf",
                         "common": "Self",
-						"hide": true,
+                        "hide": true,
                         "priority": 40,
-                        "newRole": { "reli2luv": [ "reli2" ] },
-						"cancel": ["floatzel"],
+                        "newRole": {
+                            "reli2luv": [
+                                "reli2"
+                            ]
+                        },
+                        "cancel": [
+                            "floatzel"
+                        ],
                         "silent": false
                     },
                     "discover Floatzel's or Luvdisc's name": {
-						"hide": true,
+                        "hide": true,
                         "command": "dummy",
                         "target": "OnlySelf",
                         "common": "Self",
                         "priority": 40
                     },
                     "kill": {
-						"hide": true,
+                        "hide": true,
                         "target": "AnyButSelf",
                         "common": "Self",
                         "priority": 9
@@ -1219,7 +2130,7 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
@@ -1235,24 +2146,62 @@
         {
             "role": "reli2luv",
             "translation": "Relicanth",
-			"hide": true,
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "hide": true,
+            "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"lynch": {
+            "help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "lynch": {
                     "convertTo": "reli2luvb",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
                 },
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
-				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
-                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
+                "convert": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1262,14 +2211,20 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
-				"startup": { "revealRole": [ "luva","luvb","luvc" ] },
+                "startup": {
+                    "revealRole": [
+                        "luva",
+                        "luvb",
+                        "luvc"
+                    ]
+                },
                 "avoidHax": [
                     "kill"
                 ]
@@ -1278,20 +2233,58 @@
         {
             "role": "reli2luvb",
             "translation": "Relicanth",
-			"hide": true,
-			"info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "hide": true,
+            "info": "Can kill one person during the night. Ignores all hax. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You survived your lynch but be careful, because there will not be a second time! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Luvdisc. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You ignore anyone that distracts you. You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"teamTalk": [ "luva", "luvb", "luvc", "alomf", "alomm", "reli2luv"],
-				"convert": { "msg":"Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
-                "curse": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } }, "copy": { "silent": true,  "mode": {  "ignore": [ "luva", "luvb", "luvc"] } },
+            "help2": "You have chosen to know the identity of Luvdisc, now you can't go back and you are no more immune to Floatzel's abilities. Use /tt to talk with Luvdisc's team.",
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "teamTalk": [
+                    "luva",
+                    "luvb",
+                    "luvc",
+                    "alomf",
+                    "alomm",
+                    "reli2luv"
+                ],
+                "convert": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your /love, but don't despair they could actually win together with you, so if you want you can pm them. But be cautious because if Floatzel is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "curse": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
+                "copy": {
+                    "silent": true,
+                    "mode": {
+                        "ignore": [
+                            "luva",
+                            "luvb",
+                            "luvc"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1301,14 +2294,20 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
-				"startup": { "revealRole": [ "luva","luvb","luvc" ] },
+                "startup": {
+                    "revealRole": [
+                        "luva",
+                        "luvb",
+                        "luvc"
+                    ]
+                },
                 "avoidHax": [
                     "kill"
                 ]
@@ -1317,23 +2316,35 @@
         {
             "role": "reli2float",
             "translation": "Relicanth",
-			"hide": true,
-			"info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "hide": true,
+            "info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You are a Relicanth! An ancient fish that no fish ever knew existed! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will survive the first attempt to lynch you and if you get distracted you simply will ignore it. You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"lynch": {
+            "help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "lynch": {
                     "convertTo": "reli2floatb",
                     "convertmsg": "±Relicanth: Yawn... What's happening ? Hey did someone tried to vote me out?"
                 },
-				"teamTalk": [ "float"],
-                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+                "teamTalk": [
+                    "float"
+                ],
+                "kill": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "float"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1343,14 +2354,18 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
-				"startup": { "revealRole": [ "float" ] },
+                "startup": {
+                    "revealRole": [
+                        "float"
+                    ]
+                },
                 "avoidHax": [
                     "kill"
                 ]
@@ -1359,19 +2374,31 @@
         {
             "role": "reli2floatb",
             "translation": "Relicanth",
-			"hide": true,
-			"info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
+            "hide": true,
+            "info": "Can kill one person during the night. Cannot be haxed. Can reveal itself during the day (reveal message is same as Remoraid's). Avoids all daykills. Wins with Floatzel and Luvdisc and is immune to their night abilities. Relicanth can write the name of Floatzel or Luvdisc to discover the identity of one of them, but doing so they will lose the immunity to the other role's night ability. Sided with Relicanth.",
             "side": "reli",
             "winningSides": [
                 "luv",
                 "float"
             ],
             "help": "You survived your lynch but be careful, because there will not be a second time! After failing at trying to stop the war by killing everyone, you have decided on a new tactic, and decided to team up with Luvdisc and Floatzel; you may win with either but now you are only immune to the abilities of Floatzel. You may /kill 1 person during the night. You can also /lie to reveal yourself during the standby(Your reveal message is the same as Remoraid's, so only use this to troll the Alliance and get them to PM you, so that you can kill them.) You will ignore anything that tries to distract you. You also evade daykills like Remoraid can.",
-			"help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
-			"actions": {
-				"distract": { "silent": true, "mode": "ignore" },
-				"teamTalk": [ "float"],
-                "kill": { "msg":"Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",  "mode": {  "ignore": [ "float"] } },
+            "help2": "You have chosen to know the identity of Floatzel, now you can't go back and you are no more immune to Luvdisc's abilities. Use /tt to talk with Floatzel.",
+            "actions": {
+                "distract": {
+                    "silent": true,
+                    "mode": "ignore"
+                },
+                "teamTalk": [
+                    "float"
+                ],
+                "kill": {
+                    "msg": "Your target ~Self~ the Relicanth is immune to your attack, but don't worry they could actually win together with you, so if you want you can pm them. But be cautious because if Luvdisc is alive they could betray you for them!!",
+                    "mode": {
+                        "ignore": [
+                            "float"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1381,14 +2408,18 @@
                 },
                 "standby": {
                     "lie": {
-						"msg": "Use /lie to reveal yourself as a Remoraid",
+                        "msg": "Use /lie to reveal yourself as a Remoraid",
                         "command": "expose",
                         "target": "Self",
                         "revealmsg": "~Self~, the Remoraid, suddenly finds themselves in the center of attention."
                     }
                 },
                 "daykill": "evade",
-				"startup": { "revealRole": [ "float" ] },
+                "startup": {
+                    "revealRole": [
+                        "float"
+                    ]
+                },
                 "avoidHax": [
                     "kill"
                 ]
@@ -1398,21 +2429,52 @@
             "role": "schin",
             "translation": "Shiny Chinchou",
             "side": "shiny",
-			"winIfDeadRoles": [
-                "bomb", "vigi", "lum",
+            "winIfDeadRoles": [
+                "bomb",
+                "vigi",
+                "lum",
                 "float",
-                "alomm", "luva", "luvb", "luvc",
-                "tenta1", "tenta2", "dragalge",
-				"lan",
-                "man", "oct", "maninsp", "manbg", "manvote", "maninspup", "manbgup", "manvoteup", "rem",
-                "reli", "reli2", "reli2luv", "reli2float",
-				"magikarp", "gyarados", "feebas", "milotic"
-							  ],
+                "alomm",
+                "luva",
+                "luvb",
+                "luvc",
+                "tenta1",
+                "tenta2",
+                "dragalge",
+                "lan",
+                "man",
+                "oct",
+                "maninsp",
+                "manbg",
+                "manvote",
+                "maninspup",
+                "manbgup",
+                "manvoteup",
+                "rem",
+                "reli",
+                "reli2",
+                "reli2luv",
+                "reli2float",
+                "magikarp",
+                "gyarados",
+                "feebas",
+                "milotic"
+            ],
             "help": "You are a Shiny Chinchou! You were once a part of the Chinchou Military Army...but one day, you woke up as a Shiny Chinchou! You were too good for the other Chinchous so you left them. You can /kill one person during the night, and whoever you vote for will automatically be voted off (unless the -99 Mantyke votes your target or Milotic counter-vote you). Since you were once a part of the Chinchous, they know your identity, but that shouldn't matter since you avoid all nightkills from them!",
             "info": "Can kill one person during the night. Vote counts as +99. Avoids all nightkills from Chinchous team. Sided with itself.",
-			"actions": {
-				"vote": 99,
-                "kill": { "msg":"You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3", "lan"] } },
+            "actions": {
+                "vote": 99,
+                "kill": {
+                    "msg": "You tried to attack (~Self~) the Shiny Chinchou, but he is too clever to fall before your attacks!",
+                    "mode": {
+                        "ignore": [
+                            "chin1",
+                            "chin2",
+                            "chin3",
+                            "lan"
+                        ]
+                    }
+                },
                 "night": {
                     "kill": {
                         "target": "AnyButSelf",
@@ -1426,14 +2488,39 @@
         {
             "role": "lan",
             "translation": "Lanturn",
-			"info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Doesn't know their partners. Sided with the Chinchou Military Army.",
+            "info": "Can kill one person during the day. Vote counts as 2. Immune to Chinchous' night-kills. Doesn't know their partners. Sided with the Chinchou Military Army.",
             "side": "chin",
             "help": "You are a Lanturn! You lead the Chinchous during the attacks! You are even more powerful than Chinchou! Now you can daykill(Using /kill)! You also have 2 votes instead of 1. Your Volt Absorb ability makes you immune to your Chinchous partners attacks. But that's about it...",
-			"actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is your boss, Lanturn, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
-                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
-				"standby": {
+            "actions": {
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is your boss, Lanturn, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "dummy9": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Alliance so contact him",
+                    "mode": {
+                        "identify": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "lan"
+                        ]
+                    }
+                },
+                "standby": {
                     "kill": {
                         "target": "AnyButSelf",
                         "msg": "You can now kill someone with /kill [name] :",
@@ -1449,72 +2536,177 @@
         {
             "role": "chin1",
             "translation": "Chinchou",
-			"info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Immune to their partners' attacks. Sided with Chinchou Military Army",
+            "info": "Knows only some of the other chinchous and share a killing ability with every other chinchou that knows. Immune to their partners' attacks. Sided with Chinchou Military Army",
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
-			"actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
-                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
-				"night": {
+            "actions": {
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "dummy9": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",
+                    "mode": {
+                        "identify": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "lan"
+                        ]
+                    }
+                },
+                "night": {
                     "kill": {
-						"command": ["kill", "dummy9"],
+                        "command": [
+                            "kill",
+                            "dummy9"
+                        ],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 17,
                         "broadcast": "role"
                     }
                 },
-				"teamTalk": [ "chin1"],
-				"startup": { "revealRole": [ "chin1", "schin" ] }
+                "teamTalk": [
+                    "chin1"
+                ],
+                "startup": {
+                    "revealRole": [
+                        "chin1",
+                        "schin"
+                    ]
+                }
             }
         },
         {
             "role": "chin2",
             "translation": "Chinchou",
-			"hide": true,
+            "hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill 1 person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "help2": "Also, you will know the Shiny Chinchou from the start (he doesn't know you, though), but he is not your friend so DO NOT tell him who you are!",
-			"actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
-                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
-				"night": {
+            "actions": {
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "dummy9": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",
+                    "mode": {
+                        "identify": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "lan"
+                        ]
+                    }
+                },
+                "night": {
                     "kill": {
-						"command": ["kill", "dummy9"],
+                        "command": [
+                            "kill",
+                            "dummy9"
+                        ],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 18,
                         "broadcast": "role"
                     }
                 },
-				"teamTalk": [ "chin2"],
-				"startup": { "revealRole": [ "chin2", "schin" ] }
+                "teamTalk": [
+                    "chin2"
+                ],
+                "startup": {
+                    "revealRole": [
+                        "chin2",
+                        "schin"
+                    ]
+                }
             }
         },
         {
             "role": "chin3",
             "translation": "Chinchou",
-			"hide": true,
+            "hide": true,
             "side": "chin",
             "help": "You are a Chinchou! YOU ARE COMPLETELY AWESOME! The best Pokemon evar! Anyway, you may /kill one person per night with your AWESOMENESS!! But be cautious that you don't hurt another Chinchou. Your Volt Absorb ability makes you immune to your partners attacks. Use /tt to talk with any team-mate that you know from the begin of the game.",
             "actions": {
-                "kill": { "msg":"You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",  "mode": {  "ignore": [ "chin1", "chin2", "chin3"] } },
-                "dummy9": { "msg":"You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",  "mode": {  "identify": [ "chin1", "chin2", "chin3" ] } },
-                "daykill": { "msg":"You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",  "mode": {  "ignore": [ "lan" ] } },
-				"night": {
+                "kill": {
+                    "msg": "You tried to attack (~Self~), but then you discovered that he is a fellow Chinchou, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "dummy9": {
+                    "msg": "You identified ~Target~ as the ~Role~ that tried to ~Action~ you! But he is actually part of your Army so contact him",
+                    "mode": {
+                        "identify": [
+                            "chin1",
+                            "chin2",
+                            "chin3"
+                        ]
+                    }
+                },
+                "daykill": {
+                    "msg": "You tried to attack (~Target~), but then you discovered that he is your ally, so please contact him!",
+                    "mode": {
+                        "ignore": [
+                            "lan"
+                        ]
+                    }
+                },
+                "night": {
                     "kill": {
-						"command": ["kill", "dummy9"],
+                        "command": [
+                            "kill",
+                            "dummy9"
+                        ],
                         "target": "AnyButRole",
                         "common": "Role",
                         "priority": 19,
                         "broadcast": "role"
                     }
                 },
-				"teamTalk": [ "chin3"],
-				"startup": { "revealRole": [ "chin3", "schin" ] }
+                "teamTalk": [
+                    "chin3"
+                ],
+                "startup": {
+                    "revealRole": [
+                        "chin3",
+                        "schin"
+                    ]
+                }
             }
         },
         {
@@ -1523,16 +2715,31 @@
             "side": "ugly",
             "help": "The other fishes thinks that you are weak and useless, so you and Feebas decided to show them that they are wrong. You evade 70% of the time any kill during the night. If Feebas dies or after 4 nights you will evolve into a Furious Gyarados! Use /tt to talk with your partnes.",
             "info": "Has 70% chance to evade night-kills. If Feebas dies or after 4 nights Magikarp will evolve into a Gyarados. Sided with the Ugly Ducklings.",
-			"actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+            "actions": {
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "initialCondition": {
-                    "curse": { "cursedRole": "gyarados", "curseCount": 4, "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
-                    } },
+                    "curse": {
+                        "cursedRole": "gyarados",
+                        "curseCount": 4,
+                        "curseConvertMessage": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
+                    }
+                },
                 "startup": "team-reveal",
-                "kill": { "mode": {"evadeChance": 0.7}},
+                "kill": {
+                    "mode": {
+                        "evadeChance": 0.7
+                    }
+                },
                 "vote": 1,
-				"onDeadRoles": { "convertTo": { "gyarados": ["feebas"] }, "convertmsg": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"},
+                "onDeadRoles": {
+                    "convertTo": {
+                        "gyarados": [
+                            "feebas"
+                        ]
+                    },
+                    "convertmsg": "The useless Magikarp levelled up and evolved into a furious Gyarados ready to get their revenge!"
+                },
                 "onDeath": {
                     "convertRoles": {
                         "magikarp": "gyarados",
@@ -1549,24 +2756,26 @@
             "side": "ugly",
             "help": "They made fun of your weakness, now you will laugh before their dead bodies. Every night send three cyclones on three different targets typing /rage 3 times, this players will die the next night. You are immune to night kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade night-kills. Can poison 3 targets every night which will die the next night. Sided with the Ugly Ducklings.",
-			"actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+            "actions": {
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "initialCondition": {
                     "clearCurse": true
                 },
                 "startup": "team-reveal",
-                "kill": { "mode": "ignore"},
+                "kill": {
+                    "mode": "ignore"
+                },
                 "night": {
                     "rage": {
-						"command": "poison",
+                        "command": "poison",
                         "target": "AnyButTeam",
                         "common": "Team",
-						"poisonmsg": "Your sent a cyclone to ~Target~, they will die the next night!",
-						"poisontarmsg": "A giant cyclone is going to devastate you!",
+                        "poisonmsg": "Your sent a cyclone to ~Target~, they will die the next night!",
+                        "poisontarmsg": "A giant cyclone is going to devastate you!",
                         "poisonDeadMessage": "A cyclone filled with Gyarados' rage has killed you!",
                         "broadcast": "team",
-						"limit": 3,
+                        "limit": 3,
                         "priority": 2
                     }
                 }
@@ -1578,16 +2787,31 @@
             "side": "ugly",
             "help": "The other fishes thinks that you are the most ugly thing that they ever seen, so you and Magikarp decided to show them that they are wrong. You evade 70% of the time any kill during the night. You have a -1 vote-shield. If Magikarp dies or after 4 nights you will evolve into a Beautiful Milotic! Use /tt to talk with your partners",
             "info": "Has 70% chance to evade day-kills. Has a vote-shield equal to -1. If Magikarp dies or after 4 nights Feebas will evolve into a Milotic. Sided with the Ugly Ducklings.",
-			"actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
+            "actions": {
+                "preventTeamvote": true,
+                "teamTalk": true,
                 "initialCondition": {
-                    "curse": { "cursedRole": "milotic", "curseCount": 4, "curseConvertMessage": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"
-                    } },
+                    "curse": {
+                        "cursedRole": "milotic",
+                        "curseCount": 4,
+                        "curseConvertMessage": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"
+                    }
+                },
                 "startup": "team-reveal",
-                "daykill": { "mode": {"evadeChance": 0.7}},
+                "daykill": {
+                    "mode": {
+                        "evadeChance": 0.7
+                    }
+                },
                 "voteshield": -1,
-				"onDeadRoles": { "convertTo": { "milotic": ["magikarp"] }, "convertmsg": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"},
+                "onDeadRoles": {
+                    "convertTo": {
+                        "milotic": [
+                            "magikarp"
+                        ]
+                    },
+                    "convertmsg": "The ugly Feebas found out a Prism Scale and evolved into a Beautiful Milotic ready to get their revenge!"
+                },
                 "onDeath": {
                     "convertRoles": {
                         "magikarp": "gyarados",
@@ -1602,178 +2826,237 @@
             "translation": "Milotic",
             "players": "When Feebas evolves.",
             "side": "ugly",
-			"winIfDeadRoles": [
-				"vigi",
+            "winIfDeadRoles": [
+                "vigi",
                 "float",
-                "alomm", "luva", "luvb", "luvc",
-                "tenta1", "tenta2", "dragalge",
-                "man", "oct", "maninsp", "manbg", "manvote", "maninspup", "manbgup", "manvoteup", "rem",
-                "reli", "reli2", "reli2luv", "reli2float",
-				"chin1", "chin2", "chin3",
-				"schin"
-							  ],
+                "alomm",
+                "luva",
+                "luvb",
+                "luvc",
+                "tenta1",
+                "tenta2",
+                "dragalge",
+                "man",
+                "oct",
+                "maninsp",
+                "manbg",
+                "manvote",
+                "maninspup",
+                "manbgup",
+                "manvoteup",
+                "rem",
+                "reli",
+                "reli2",
+                "reli2luv",
+                "reli2float",
+                "chin1",
+                "chin2",
+                "chin3",
+                "schin"
+            ],
             "help": "They made fun of your ugliness, now you will show them your real beauty. Your great beauty gives you a vote power equal to +999 and a vote-shield of -999. You are immune to day-kills. Now let's show them who laugh last! Use /tt to talk with your partners.",
             "info": "Evade day-kills. Has +999 vote power. Has a -999 voteshield. Sided with the Ugly Ducklings.",
-			"actions": {
-				"preventTeamvote": true,
-				"teamTalk": true,
-                "initialCondition": { "clearCurse": true },
+            "actions": {
+                "preventTeamvote": true,
+                "teamTalk": true,
+                "initialCondition": {
+                    "clearCurse": true
+                },
                 "startup": "team-reveal",
                 "daykill": "evade",
-				"voteshield": -999,
-				"vote": 999
+                "voteshield": -999,
+                "vote": 999
             }
         }
     ],
     "roles1": [
         "fin",
-        {"insp": 0.5, "hooker": 0.5},
+        {
+            "insp": 0.5,
+            "hooker": 0.5
+        },
         "chin1",
         "fin",
-        {"mayor": 0.5, "bg": 0.5},
+        {
+            "mayor": 0.5,
+            "bg": 0.5
+        },
         "tenta1",
         "fin",
         "chin1"
     ],
     "roles2": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
-        {"mayor": 0.5, "bg": 0.5},
+        {
+            "mayor": 0.5,
+            "bg": 0.5
+        },
         "rem",
-        {"maninsp": 0.6,"manvote": 0.4},
+        {
+            "maninsp": 0.6,
+            "manvote": 0.4
+        },
         "lan",
-        {"insp": 0.5, "hooker": 0.5},
+        {
+            "insp": 0.5,
+            "hooker": 0.5
+        },
         "man",
-		"fin"
+        "fin"
     ],
     "roles3": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
-        {"mayor": 0.5, "bg": 0.5},
+        {
+            "mayor": 0.5,
+            "bg": 0.5
+        },
         "rem",
-        {"maninsp": 0.6,"manvote": 0.4},
+        {
+            "maninsp": 0.6,
+            "manvote": 0.4
+        },
         "lan",
         "insp",
         "man",
-		"fin",
-		"hooker"
+        "fin",
+        "hooker"
     ],
     "roles4": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
-        {"mayor": 0.5, "bg": 0.5},
+        {
+            "mayor": 0.5,
+            "bg": 0.5
+        },
         "rem",
-        {"maninsp": 0.6,"manbg": 0.4},
+        {
+            "maninsp": 0.6,
+            "manbg": 0.4
+        },
         "lan",
         "insp",
-        {"manvote": 0.6,"man": 0.4},
-		"hooker",
-		"reli",
-		"tenta2",
-		"chin2",
-		"fin",
-		"fin"
+        {
+            "manvote": 0.6,
+            "man": 0.4
+        },
+        "hooker",
+        "reli",
+        "tenta2",
+        "chin2",
+        "fin",
+        "fin"
     ],
     "roles5": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
         "mayor",
         "rem",
-        {"maninsp": 0.5,"manvote": 0.5},
+        {
+            "maninsp": 0.5,
+            "manvote": 0.5
+        },
         "lan",
         "insp",
         "man",
-		"reli",
-		"hooker",
-		"tenta2",
-		"chin2",
-		"fin",
-		"magikarp",
-		"feebas",
-		"bg",
-		"tenta1",
-		"fin",
-		"unkill",
-		"fin"
+        "reli",
+        "hooker",
+        "tenta2",
+        "chin2",
+        "fin",
+        "magikarp",
+        "feebas",
+        "bg",
+        "tenta1",
+        "fin",
+        "unkill",
+        "fin"
     ],
     "roles6": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
         "mayor",
         "rem",
-        {"maninsp": 0.5,"manvote": 0.5},
+        {
+            "maninsp": 0.5,
+            "manvote": 0.5
+        },
         "lan",
         "insp",
         "man",
-		"fin",
-		"hooker",
-		"tenta2",
-		"chin2",
-		"fin",
-		"magikarp",
-		"feebas",
-		"bg",
-		"tenta1",
-		"fin",
-		"unkill",
-		"luva",
-		"float",
-		"fin"
+        "fin",
+        "hooker",
+        "tenta2",
+        "chin2",
+        "fin",
+        "magikarp",
+        "feebas",
+        "bg",
+        "tenta1",
+        "fin",
+        "unkill",
+        "luva",
+        "float",
+        "fin"
     ],
     "roles7": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
         "mayor",
         "rem",
-        {"maninsp": 0.5,"manvote": 0.5},
+        {
+            "maninsp": 0.5,
+            "manvote": 0.5
+        },
         "lan",
         "insp",
         "man",
-		"fin",
-		"hooker",
-		"tenta2",
-		"chin2",
-		"fin",
-		"magikarp",
-		"feebas",
-		"bg",
-		"tenta1",
-		"fin",
-		"unkill",
-		"luva",
-		"float",
-		"lovera",
-		"lovera",
-		"fin",
-		"chin2",
-		"manbg",
-		"reli2",
-		"fin",
-		"dragalge",
-		"bomb",
-		"fin",
-		"chin3",
-		"vigi",
-		"fin",
-		"oct",
-		"insp",
-		"tenta1"
+        "fin",
+        "hooker",
+        "tenta2",
+        "chin2",
+        "fin",
+        "magikarp",
+        "feebas",
+        "bg",
+        "tenta1",
+        "fin",
+        "unkill",
+        "luva",
+        "float",
+        "lovera",
+        "lovera",
+        "fin",
+        "chin2",
+        "manbg",
+        "reli2",
+        "fin",
+        "dragalge",
+        "bomb",
+        "fin",
+        "chin3",
+        "vigi",
+        "fin",
+        "oct",
+        "insp",
+        "tenta1"
     ],
     "roles8": [
         "fin",
-		"lum",
+        "lum",
         "chin1",
         "fin",
         "mayor",
@@ -1782,41 +3065,41 @@
         "lan",
         "insp",
         "man",
-		"fin",
-		"hooker",
-		"tenta2",
-		"chin2",
-		"fin",
-		"magikarp",
-		"feebas",
-		"bg",
-		"tenta1",
-		"fin",
-		"unkill",
-		"luva",
-		"float",
-		"lovera",
-		"lovera",
-		"fin",
-		"chin2",
-		"manbg",
-		"reli2",
-		"fin",
-		"dragalge",
-		"bomb",
-		"fin",
-		"schin",
-		"chin3",
-		"vigi",
-		"fin",
-		"oct",
-		"insp",
-		"tenta1",
-		"manvote",
-		"fin",
-		"mayor",
-		"chin3",
-		"fin"
+        "fin",
+        "hooker",
+        "tenta2",
+        "chin2",
+        "fin",
+        "magikarp",
+        "feebas",
+        "bg",
+        "tenta1",
+        "fin",
+        "unkill",
+        "luva",
+        "float",
+        "lovera",
+        "lovera",
+        "fin",
+        "chin2",
+        "manbg",
+        "reli2",
+        "fin",
+        "dragalge",
+        "bomb",
+        "fin",
+        "schin",
+        "chin3",
+        "vigi",
+        "fin",
+        "oct",
+        "insp",
+        "tenta1",
+        "manvote",
+        "fin",
+        "mayor",
+        "chin3",
+        "fin"
     ],
     "villageCantLoseRoles": [
         "lum",
@@ -1825,21 +3108,20 @@
     ],
     "killmsg": "±Death: ~Player~ (~Role~) drowned!",
     "killusermsg": "±Death: You were killed! Rest in peace...",
-	"tips": {
-		"Village 1": "Due to the amount of enemy daykills, neither Lumineon nor the Finneon Inspector can safely claim.",
-		"Village 2": "If there are no more Mantykes and Remoraid has been revealed, vote him off.",
-		"Chinchous 1": "If you find one of your allies, PM THEM AS SOON AS POSSIBLE. This is your only real form of connecting.",
-		"Chinchous 2": "(If Shiny Chinchou is in play) If you find Lanturn, tell him who the Shiny Chinchou is as Lanturn can kill him.",
-		"Alliance 1": "In large games, please be aware that Relicanth can reveal himself with the exact same reveal message as Remoraid. Be cautious.",
-		"Alliance 2": "Octillery should only day-kill if he is certain to win after killing someone or he has been revealed.",
-		"Alliance 3": "Connection is crucial for you. If you find one of your partners, PM THEM AS SOON AS POSSIBLE. If Remoraid reveals himself, make sure you PM him so you can be connected with your team."
-	},
+    "tips": {
+        "Village 1": "Due to the amount of enemy daykills, neither Lumineon nor the Finneon Inspector can safely claim.",
+        "Village 2": "If there are no more Mantykes and Remoraid has been revealed, vote him off.",
+        "Chinchous 1": "If you find one of your allies, PM THEM AS SOON AS POSSIBLE. This is your only real form of connecting.",
+        "Chinchous 2": "(If Shiny Chinchou is in play) If you find Lanturn, tell him who the Shiny Chinchou is as Lanturn can kill him.",
+        "Alliance 1": "In large games, please be aware that Relicanth can reveal himself with the exact same reveal message as Remoraid. Be cautious.",
+        "Alliance 2": "Octillery should only day-kill if he is certain to win after killing someone or he has been revealed.",
+        "Alliance 3": "Connection is crucial for you. If you find one of your partners, PM THEM AS SOON AS POSSIBLE. If Remoraid reveals himself, make sure you PM him so you can be connected with your team."
+    },
     "changelog": {
         "June 2, 2014": "Changelog added. Theme re-made and fixed for server.",
         "June 17, 2014": "Test Period Started.",
         "June 19, 2014": "Added TeamTalk and fixed some errors.",
         "June 20, 2014": "The Members of the Alliance team now evolves after 5 nights or when Remoraid or all the Mantykes dies. No more Rip messages, it looks like it was annoying for some people.",
-	"July 2, 2014": "Added /tips and preventTeamVotes for Toxic Fishes and Ugly Ducklings, buffed Relicanth a little: now they will survive the first time that they get lynched and will ignore any attempt to distract him."
-		}
+        "July 2, 2014": "Added /tips and preventTeamVotes for Toxic Fishes and Ugly Ducklings, buffed Relicanth a little: now they will survive the first time that they get lynched and will ignore any attempt to distract him."
+    }
 }
-
